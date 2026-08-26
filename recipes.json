@@ -1,0 +1,531 @@
+{
+  "_meta": {
+    "nutrition_note": "calories_kcal and protein_g are per-serving estimates",
+    "time_units": "minutes",
+    "equipment_available": ["oven", "stove", "pots", "pans", "dutch oven", "crockpot"]
+  },
+  "quick": [
+    {
+      "name": "Korean Bulgogi Beef Bowls",
+      "cuisine": "Korean",
+      "total_time": 25,
+      "active_time": 15,
+      "equipment": ["stove", "pan"],
+      "calories_kcal": 820,
+      "protein_g": 52,
+      "sauce": "Sesame-Garlic",
+      "ingredients": [
+        "600g ribeye or sirloin, thinly sliced",
+        "marinade: soy, brown sugar, sesame oil, garlic, pear or apple grated, ginger",
+        "250g jasmine rice",
+        "kimchi, fried egg, scallions to serve"
+      ],
+      "steps": [
+        "Start rice; marinate beef while it cooks.",
+        "Sear beef hot and fast in batches, 2 min.",
+        "Serve over rice with kimchi and a fried egg."
+      ]
+    },
+    {
+      "name": "Pad Krapow (Thai Basil Chicken)",
+      "cuisine": "Thai",
+      "total_time": 20,
+      "active_time": 20,
+      "equipment": ["stove", "wok or large pan"],
+      "calories_kcal": 780,
+      "protein_g": 50,
+      "sauce": null,
+      "ingredients": [
+        "500g ground chicken or pork",
+        "garlic, chilies, shallot",
+        "sauce: oyster sauce, soy, fish sauce, dark soy, sugar splash",
+        "big bunch holy or Thai basil",
+        "jasmine rice + crispy fried eggs"
+      ],
+      "steps": [
+        "Start rice; fry eggs until lacy-crisp.",
+        "Stir-fry garlic/chili/shallot, add meat, brown hard.",
+        "Add sauce, toss off heat with basil; serve over rice with egg."
+      ]
+    },
+    {
+      "name": "Gyudon (Japanese Simmered Beef Bowl)",
+      "cuisine": "Japanese",
+      "total_time": 20,
+      "active_time": 20,
+      "equipment": ["stove", "pan"],
+      "calories_kcal": 800,
+      "protein_g": 48,
+      "sauce": null,
+      "ingredients": [
+        "500g thin-sliced beef (ribeye or hot-pot cut)",
+        "1 onion, sliced",
+        "simmer liquid: dashi or stock, soy, mirin, sake, sugar",
+        "short-grain rice, pickled ginger, raw or onsen egg"
+      ],
+      "steps": [
+        "Simmer onion in sauce liquid 5 min.",
+        "Add beef, simmer 3-4 min until just cooked.",
+        "Pile over rice, top with egg and ginger."
+      ]
+    },
+    {
+      "name": "Weeknight Butter Chicken",
+      "cuisine": "Indian",
+      "total_time": 30,
+      "active_time": 30,
+      "equipment": ["stove", "pot or deep pan"],
+      "calories_kcal": 850,
+      "protein_g": 50,
+      "sauce": null,
+      "ingredients": [
+        "700g chicken thighs, cubed",
+        "yogurt + garam masala quick marinade",
+        "butter (60g), onion, garlic, ginger",
+        "tomato passata, garam masala, cumin, paprika, kasuri methi if you have it",
+        "150ml cream, basmati rice or naan"
+      ],
+      "steps": [
+        "Start rice; marinate chicken while pan heats.",
+        "Char chicken in batches, remove.",
+        "Butter, sauté aromatics + spices, add passata, simmer 5 min.",
+        "Blend smooth if you want restaurant texture, return chicken, finish with cream."
+      ]
+    },
+    {
+      "name": "Chipotle-Style Chicken Burrito Bowls",
+      "cuisine": "Mexican-American",
+      "total_time": 25,
+      "active_time": 25,
+      "equipment": ["stove", "2 pans"],
+      "calories_kcal": 900,
+      "protein_g": 55,
+      "sauce": "Chipotle-Lime Cream",
+      "ingredients": [
+        "600g chicken thighs",
+        "cumin, oregano, chipotle powder, lime",
+        "canned black beans, warmed with garlic",
+        "rice cooked with bay + lime zest",
+        "corn salsa, cheese, guac or avocado"
+      ],
+      "steps": [
+        "Start rice; season chicken hard.",
+        "Sear chicken 5-6 min per side, rest, slice.",
+        "Warm beans; assemble bowls with toppings."
+      ]
+    },
+    {
+      "name": "Shrimp Pad Thai",
+      "cuisine": "Thai",
+      "total_time": 25,
+      "active_time": 25,
+      "equipment": ["stove", "wok or large pan"],
+      "calories_kcal": 780,
+      "protein_g": 42,
+      "sauce": null,
+      "ingredients": [
+        "250g rice noodles, soaked",
+        "400g shrimp",
+        "2 eggs, firm tofu cubes optional",
+        "sauce: tamarind paste, fish sauce, palm/brown sugar",
+        "bean sprouts, garlic chives, peanuts, lime"
+      ],
+      "steps": [
+        "Soak noodles in hot water while prepping.",
+        "Scramble eggs, sear shrimp, add noodles + sauce.",
+        "Toss 2-3 min, finish with sprouts, peanuts, lime."
+      ]
+    },
+    {
+      "name": "Kung Pao Chicken",
+      "cuisine": "Chinese (Sichuan)",
+      "total_time": 25,
+      "active_time": 25,
+      "equipment": ["stove", "wok or large pan"],
+      "calories_kcal": 750,
+      "protein_g": 48,
+      "sauce": "Sichuan Chili Oil Soy",
+      "ingredients": [
+        "600g chicken thighs, cubed",
+        "soy + cornstarch velveting marinade",
+        "dried chilies, Sichuan peppercorns, peanuts",
+        "scallions, garlic, ginger",
+        "sauce: soy, black vinegar, sugar, cornstarch",
+        "steamed rice"
+      ],
+      "steps": [
+        "Velvet chicken 10 min in soy/cornstarch; start rice.",
+        "Flash-fry chilies + peppercorns, sear chicken.",
+        "Add aromatics + sauce, glaze, toss peanuts and scallions."
+      ]
+    },
+    {
+      "name": "Chicken Shawarma Bowls",
+      "cuisine": "Middle Eastern",
+      "total_time": 30,
+      "active_time": 15,
+      "equipment": ["oven", "stove"],
+      "calories_kcal": 820,
+      "protein_g": 52,
+      "sauce": "Harissa Yogurt",
+      "ingredients": [
+        "700g chicken thighs",
+        "shawarma marinade: yogurt, cumin, coriander, turmeric, paprika, garlic, lemon",
+        "basmati rice",
+        "tomato-cucumber salad, pickled onions, feta",
+        "tahini or garlic-yogurt sauce"
+      ],
+      "steps": [
+        "Marinate chicken while oven heats to 220C/425F.",
+        "Roast chicken 18-20 min, start rice meanwhile.",
+        "Build bowls, drizzle tahini sauce."
+      ]
+    },
+    {
+      "name": "Skillet Steak Fajitas",
+      "cuisine": "Tex-Mex",
+      "total_time": 20,
+      "active_time": 20,
+      "equipment": ["stove", "cast iron pan"],
+      "calories_kcal": 780,
+      "protein_g": 52,
+      "sauce": "Avocado Cilantro Lime",
+      "ingredients": [
+        "500g flank or skirt steak",
+        "2 peppers, 1 onion, sliced",
+        "fajita spice: cumin, chili, smoked paprika, oregano",
+        "flour tortillas, cheese, sour cream, lime"
+      ],
+      "steps": [
+        "Sear whole steak 3-4 min per side, rest.",
+        "Char peppers and onions in same pan.",
+        "Slice steak against grain, serve sizzling with warm tortillas."
+      ]
+    },
+    {
+      "name": "Oyakodon (Chicken and Egg Rice Bowl)",
+      "cuisine": "Japanese",
+      "total_time": 20,
+      "active_time": 20,
+      "equipment": ["stove", "small pan"],
+      "calories_kcal": 720,
+      "protein_g": 45,
+      "sauce": null,
+      "ingredients": [
+        "400g chicken thighs, sliced thin",
+        "1 onion, sliced",
+        "dashi, soy, mirin, sugar",
+        "4 eggs, softly beaten",
+        "short-grain rice, scallion, nori strips"
+      ],
+      "steps": [
+        "Simmer chicken + onion in seasoned dashi until cooked through.",
+        "Pour in eggs, cover 60-90 sec until barely set.",
+        "Slide over individual bowls of hot rice."
+      ]
+    }
+  ],
+  "batch": [
+    {
+      "name": "Crockpot Chicken Tikka Masala",
+      "cuisine": "Indian",
+      "batch_servings": 10,
+      "total_time": 360,
+      "active_time": 25,
+      "equipment": ["crockpot", "blender (optional)", "rice cooker or pot"],
+      "calories_kcal": 680,
+      "protein_g": 46,
+      "fridge_days": 4,
+      "freezes_well": true,
+      "reheat": "Microwave or gentle simmer; add splash of cream after reheating; cook rice fresh",
+      "ingredients": [
+        "1.5kg chicken thighs, cubed",
+        "yogurt + lemon + spices (marinade, even 15 min helps)",
+        "2 onions, garlic, ginger",
+        "garam masala, cumin, coriander, turmeric, paprika, cayenne",
+        "2 cans crushed tomatoes, 200ml cream, butter knob",
+        "kasuri methi, basmati to serve"
+      ],
+      "steps": [
+        "Bloom spices with onion/garlic/ginger in butter on the stove 5 min.",
+        "Everything into crockpot except cream; low 5-6h.",
+        "Blend partially or fully, stir in cream + methi.",
+        "Freeze sauce+chicken flat; never freeze the rice."
+      ]
+    },
+    {
+      "name": "Dutch Oven Chicken Biryani",
+      "cuisine": "Indian (Hyderabadi-style)",
+      "batch_servings": 10,
+      "total_time": 120,
+      "active_time": 40,
+      "equipment": ["dutch oven", "oven"],
+      "calories_kcal": 850,
+      "protein_g": 45,
+      "fridge_days": 4,
+      "freezes_well": true,
+      "reheat": "Covered oven at 160C with splash of water, or microwave covered; texture is best day-of but freezes acceptably",
+      "ingredients": [
+        "1kg chicken thighs, boneless",
+        "500g basmati, soaked 30 min",
+        "yogurt, biryani/masala spices, saffron bloomed in warm milk",
+        "fried onions (2 large), mint + cilantro, ghee",
+        "ginger-garlic paste, green chilies"
+      ],
+      "steps": [
+        "Marinate chicken in spiced yogurt 30+ min.",
+        "Parboil rice 70% done.",
+        "Layer marinated chicken + rice + herbs + fried onions + saffron milk in pot.",
+        "Seal with foil + lid, bake 180C/350F for 35-40 min, rest 10 before opening."
+      ]
+    },
+    {
+      "name": "Carnitas (Crockpot Pulled Pork, Michoacán-style)",
+      "cuisine": "Mexican",
+      "batch_servings": 14,
+      "total_time": 480,
+      "active_time": 20,
+      "equipment": ["crockpot", "sheet pan + oven (crisping step)"],
+      "calories_kcal": 620,
+      "protein_g": 42,
+      "fridge_days": 5,
+      "freezes_well": true,
+      "reheat": "Broil portions 5 min for crispy edges straight from fridge/frozen-thawed",
+      "ingredients": [
+        "2.5-3kg pork shoulder, chunked",
+        "orange juice + lime, garlic, oregano, cumin, bay",
+        "salt generously",
+        "serve as: tacos, burrito bowls, quesadillas, tortas"
+      ],
+      "steps": [
+        "Season pork, crockpot with citrus + aromatics, low 8h.",
+        "Shred, spread on sheet pans with fat, broil until edges crisp.",
+        "Portion with some cooking fat/juice to stay moist."
+      ]
+    },
+    {
+      "name": "Chicken Tinga",
+      "cuisine": "Mexican (Puebla)",
+      "batch_servings": 12,
+      "total_time": 420,
+      "active_time": 15,
+      "equipment": ["crockpot", "pan"],
+      "calories_kcal": 480,
+      "protein_g": 46,
+      "fridge_days": 5,
+      "freezes_well": true,
+      "reheat": "Microwave; use in tacos, tostadas, burrito bowls, enchiladas",
+      "ingredients": [
+        "2kg chicken thighs or breasts",
+        "2 cans crushed tomatoes + 2 cups salsa",
+        "2-4 chipotles in adobo, 1 sliced onion, garlic",
+        "cumin, oregano",
+        "toppings: queso fresco, crema, avocado, rice, beans"
+      ],
+      "steps": [
+        "Optional: char onions + chipotles in a dry pan first for depth.",
+        "Everything in crockpot, low 6h; shred into the sauce.",
+        "Boost bowl calories with rice, cheese and crema."
+      ]
+    },
+    {
+      "name": "Chicken and Sausage Gumbo",
+      "cuisine": "Cajun (Louisiana)",
+      "batch_servings": 12,
+      "total_time": 180,
+      "active_time": 50,
+      "equipment": ["dutch oven"],
+      "calories_kcal": 640,
+      "protein_g": 42,
+      "fridge_days": 4,
+      "freezes_well": true,
+      "reheat": "Stovetop over medium, stirring; serve over fresh rice",
+      "ingredients": [
+        "1kg chicken thighs, cubed; 600g andouille or smoked sausage",
+        "dark roux: 150g flour + 150g oil, cooked to chocolate color",
+        "holy trinity: onion, celery, green pepper + garlic",
+        "1.5l chicken stock, okra optional",
+        "cajun seasoning, thyme, bay, filé powder to finish",
+        "white rice to serve"
+      ],
+      "steps": [
+        "Brown sausage and chicken, reserve.",
+        "Make roux, stirring constantly 20-30 min to dark brown — don't walk away.",
+        "Wilt trinity into roux, add stock, meats, seasonings; simmer 1h.",
+        "Freeze WITHOUT rice; cook rice fresh per portion."
+      ]
+    },
+    {
+      "name": "Jambalaya",
+      "cuisine": "Creole (Louisiana)",
+      "batch_servings": 10,
+      "total_time": 90,
+      "active_time": 30,
+      "equipment": ["dutch oven"],
+      "calories_kcal": 720,
+      "protein_g": 45,
+      "fridge_days": 4,
+      "freezes_well": true,
+      "reheat": "Microwave with splash of water or stovetop covered pan",
+      "ingredients": [
+        "800g chicken thighs, diced; 500g andouille; 500g shrimp (add at end)",
+        "trinity: onion, celery, green pepper, garlic",
+        "canned tomatoes, 500g long-grain rice, 1l stock",
+        "cajun seasoning, smoked paprika, thyme, bay"
+      ],
+      "steps": [
+        "Brown meats, sauté trinity + spices.",
+        "Add tomatoes, stock, rice; cover and simmer 25-30 min undisturbed.",
+        "Fold in shrimp last 5 min. Freezes fine though rice softens slightly."
+      ]
+    },
+    {
+      "name": "Slow-Cooker Lamb Rogan Josh",
+      "cuisine": "Indian (Kashmiri-style)",
+      "batch_servings": 10,
+      "total_time": 420,
+      "active_time": 25,
+      "equipment": ["crockpot", "pan"],
+      "calories_kcal": 720,
+      "protein_g": 48,
+      "fridge_days": 5,
+      "freezes_well": true,
+      "reheat": "Stovetop or microwave; thickens when cold, loosen with water; cook rice fresh",
+      "ingredients": [
+        "1.5kg lamb shoulder or leg, chunked",
+        "rogan josh paste: garlic, ginger, Kashmiri chili powder, paprika, fennel ground, dry-roasted ground cardamom + cloves",
+        "2 onions finely diced, yogurt 250g whisked in at end",
+        "tomato passata 400g, ghee or neutral oil for frying paste",
+        "bay leaves, black peppercorns, cinnamon stick",
+        "basmati rice or naan to serve"
+      ],
+      "steps": [
+        "Fry onions until deep golden, add garlic/ginger + spices, bloom into a dark paste.",
+        "Lamb + passata into crockpot with the paste; low 6-7h.",
+        "Stir whisked yogurt in during last 30 min so it doesn't split.",
+        "Freeze flat in portions; sauce improves after freezing."
+      ]
+    },
+    {
+      "name": "Beef Rendang",
+      "cuisine": "Indonesian/Malaysian",
+      "batch_servings": 10,
+      "total_time": 210,
+      "active_time": 30,
+      "equipment": ["dutch oven"],
+      "calories_kcal": 750,
+      "protein_g": 48,
+      "fridge_days": 5,
+      "freezes_well": true,
+      "reheat": "Stovetop splash of coconut milk; flavor improves after freezing",
+      "ingredients": [
+        "1.5kg beef chuck, chunked",
+        "rendang paste: lemongrass, galangal or ginger, chilies, shallots, garlic, turmeric",
+        "2 cans coconut milk, makrut lime leaves, tamarind",
+        "toasted coconut flake garnish, rice to serve"
+      ],
+      "steps": [
+        "Blitz paste; fry in oil until fragrant and darkened, 10 min.",
+        "Add beef + coconut milk, bare simmer 2.5-3h until sauce reduces and coats the meat (not dry unless going full rendang).",
+        "Portion with rice separately; freezes exceptionally well."
+      ]
+    },
+    {
+      "name": "Filipino Chicken Adobo",
+      "cuisine": "Filipino",
+      "batch_servings": 10,
+      "total_time": 90,
+      "active_time": 15,
+      "equipment": ["large pot or dutch oven"],
+      "calories_kcal": 650,
+      "protein_g": 48,
+      "fridge_days": 6,
+      "freezes_well": true,
+      "reheat": "Microwave or simmer; tastes even better days later",
+      "ingredients": [
+        "2kg chicken thighs, bone-in skin-on",
+        "1 cup soy sauce, 3/4 cup white vinegar, lots of garlic, bay leaves, whole peppercorns",
+        "optional: coconut milk finish",
+        "jasmine rice to serve"
+      ],
+      "steps": [
+        "Dump everything in the pot, bring to simmer, cook covered 40 min.",
+        "Uncover, reduce sauce, optionally brown chicken at the end.",
+        "One of the easiest big batches that exists; sauce over rice is the point."
+      ]
+    },
+    {
+      "name": "Beef Pho (Slow Broth)",
+      "cuisine": "Vietnamese",
+      "batch_servings": 10,
+      "total_time": 420,
+      "active_time": 40,
+      "equipment": ["crockpot or large pot", "stove"],
+      "calories_kcal": 600,
+      "protein_g": 42,
+      "fridge_days": 4,
+      "freezes_well": true,
+      "reheat": "Boil broth; assemble bowls fresh — noodles, raw-sliced beef, herbs never freeze",
+      "ingredients": [
+        "2kg marrow/beef bones + 500g brisket",
+        "charred onion + ginger, star anise, cinnamon, cloves, coriander seed",
+        "fish sauce, rock sugar",
+        "per bowl: thin rice noodles, eye-of-round shaved thin, bean sprouts, Thai basil, lime, chili, cilantro"
+      ],
+      "steps": [
+        "Blanch bones 10 min, rinse; char onion + ginger under broiler.",
+        "Simmer bones/spices 6-8h in crockpot (or 3-4h stovetop); strain, season with fish sauce + sugar.",
+        "Freeze broth in quart portions; boil broth and pour over raw-sliced beef + cooked noodles per serving."
+      ]
+    },
+    {
+      "name": "Massaman Beef Curry (Crockpot)",
+      "cuisine": "Thai",
+      "batch_servings": 10,
+      "total_time": 420,
+      "active_time": 20,
+      "equipment": ["crockpot"],
+      "calories_kcal": 780,
+      "protein_g": 44,
+      "fridge_days": 5,
+      "freezes_well": true,
+      "reheat": "Stovetop or microwave with splash of coconut milk; potatoes soften further when frozen but that's fine here",
+      "ingredients": [
+        "1.5kg beef chuck, chunked",
+        "massaman paste (store-bought fine) fried briefly in coconut cream",
+        "2 cans coconut milk, fish sauce, palm sugar, tamarind",
+        "baby potatoes, roasted peanuts, cinnamon stick, cardamom",
+        "jasmine rice to serve"
+      ],
+      "steps": [
+        "Fry paste in thick coconut cream until split and fragrant.",
+        "All ingredients into crockpot, low 7-8h.",
+        "Adjust sweet/sour/salty at the end; serve over rice."
+      ]
+    },
+    {
+      "name": "Louisiana Red Beans and Rice",
+      "cuisine": "Cajun (Louisiana)",
+      "batch_servings": 10,
+      "total_time": 240,
+      "active_time": 20,
+      "equipment": ["dutch oven or crockpot"],
+      "calories_kcal": 680,
+      "protein_g": 36,
+      "fridge_days": 6,
+      "freezes_well": true,
+      "reheat": "Microwave or stovetop; thickens cold, add water; always fresh rice",
+      "ingredients": [
+        "1kg dried red beans, soaked overnight",
+        "600g andouille + a ham hock or pickled meat if you have it",
+        "trinity + garlic, bay, thyme, cayenne, smoked paprika",
+        "cook Monday, eat all week (it's tradition)"
+      ],
+      "steps": [
+        "Brown sausage, sweat trinity with spices.",
+        "Add beans, hock, water to cover; simmer 2.5-3h (or crockpot low 8h), smashing some beans against the pot to make it creamy.",
+        "Season late (hock is salty); serve over rice with hot sauce."
+      ]
+    }
+  ]
+}
