@@ -26,7 +26,7 @@ export interface Sauce {
   flavor: string
   ingredients: string
   notes: string
-  region: string
+  regions: string[]
   profile: string
 }
 
@@ -43,7 +43,7 @@ export interface Protein {
 
 export interface Accessory {
   name: string
-  region: string
+  regions: string[]
   type: string
 }
 

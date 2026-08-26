@@ -1,10 +1,36 @@
 import { Fragment, useState } from "react";
-import { recipes, sauces } from "./data";
-import type { BatchRecipe, QuickRecipe, Sauce } from "./types";
+import { accessories, recipes, sauces } from "./data";
+import type { Accessory, BatchRecipe, QuickRecipe, Sauce } from "./types";
 import Builder from "./Builder";
+import { MatrixView } from "./Matrix";
 
 type AnyRecipe = QuickRecipe | BatchRecipe;
-type Tab = "recipes" | "sauces" | "builder";
+type Tab = "recipes" | "sauces" | "accessories" | "builder";
+
+function ViewToggle({
+    view,
+    setView,
+}: {
+    view: "list" | "matrix";
+    setView: (v: "list" | "matrix") => void;
+}) {
+    return (
+        <div className="chips tabs-follow">
+            <button
+                className={`chip${view === "list" ? " selected" : ""}`}
+                onClick={() => setView("list")}
+            >
+                List
+            </button>
+            <button
+                className={`chip${view === "matrix" ? " selected" : ""}`}
+                onClick={() => setView("matrix")}
+            >
+                Matrix
+            </button>
+        </div>
+    );
+}
 
 function ThemeToggle() {
     const [dark, setDark] = useState(() =>
@@ -28,7 +54,7 @@ function ThemeToggle() {
 function Tabs({ tab, setTab }: { tab: Tab; setTab: (t: Tab) => void }) {
     return (
         <nav className="tabs">
-            {(["recipes", "sauces", "builder"] as const).map((t) => (
+            {(["recipes", "sauces", "accessories", "builder"] as const).map((t) => (
                 <button
                     key={t}
                     className={`ghost${tab === t ? " active" : ""}`}
@@ -292,7 +318,8 @@ export default function App() {
                     />
                 </>
             )}
-            {tab === "sauces" && <SauceTable />}
+            {tab === "sauces" && <SaucesTab />}
+            {tab === "accessories" && <AccessoriesTab />}
             {tab === "builder" && <Builder />}
         </main>
     );
@@ -346,6 +373,76 @@ function SauceTable() {
                                 </tr>
                             )}
                         </Fragment>
+                    ))}
+                </tbody>
+            </table>
+        </section>
+    );
+}
+
+function SaucesTab() {
+    const [view, setView] = useState<"list" | "matrix">("list");
+    return (
+        <>
+            <ViewToggle view={view} setView={setView} />
+            {view === "list" ? (
+                <SauceTable />
+            ) : (
+                <MatrixView
+                    title="Sauce matrix"
+                    note="region × flavor profile"
+                    items={sauces}
+                    rowKey={(s: Sauce) => s.regions}
+                    colKey={(s: Sauce) => [s.profile]}
+                />
+            )}
+        </>
+    );
+}
+
+function AccessoriesTab() {
+    const [view, setView] = useState<"list" | "matrix">("list");
+    return (
+        <>
+            <ViewToggle view={view} setView={setView} />
+            {view === "list" ? (
+                <AccessoryList />
+            ) : (
+                <MatrixView
+                    title="Accessory matrix"
+                    note="region × type"
+                    items={accessories}
+                    rowKey={(a: Accessory) => a.regions}
+                    colKey={(a: Accessory) => [a.type]}
+                />
+            )}
+        </>
+    );
+}
+
+function AccessoryList() {
+    return (
+        <section>
+            <h2>
+                Accessories <small className="dim">{accessories.length}</small>
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Region</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {accessories.map((a) => (
+                        <tr key={a.name}>
+                            <td>
+                                <strong>{a.name}</strong>
+                            </td>
+                            <td>{a.regions.join(", ")}</td>
+                            <td>{a.type}</td>
+                        </tr>
                     ))}
                 </tbody>
             </table>

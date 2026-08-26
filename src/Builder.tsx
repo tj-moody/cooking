@@ -10,6 +10,7 @@ import {
     techniques,
 } from "./data";
 import type { Accessory, Build, Sauce } from "./types";
+import { MatrixView } from "./Matrix";
 
 const STEPS = [
     "Form factor",
@@ -102,8 +103,12 @@ export default function Builder() {
     const [draft, setDraft] = useState<Draft>(emptyDraft);
     const [builds, setBuilds] = useState<Build[]>(loadBuilds);
     const [returnToReview, setReturnToReview] = useState(false);
-    const [groupBy, setGroupBy] = useState<"region" | "profile">("region");
-    const [accGroupBy, setAccGroupBy] = useState<"region" | "type">("type");
+    const [groupBy, setGroupBy] = useState<"region" | "profile" | "matrix">(
+        "region",
+    );
+    const [accGroupBy, setAccGroupBy] = useState<"region" | "type" | "matrix">(
+        "type",
+    );
 
     const done =
         draft.formFactor &&
@@ -169,6 +174,15 @@ export default function Builder() {
 
     const canGoTo = (i: number) =>
         [0, 1, 2].slice(0, i).every((j) => stepComplete[j]);
+
+    function toggleAccessory(name: string) {
+        pick(
+            "accessories",
+            draft.accessories.includes(name)
+                ? draft.accessories.filter((x) => x !== name)
+                : [...draft.accessories, name],
+        );
+    }
 
     function pickProtein(name: string) {
         setDraft((d) => ({ ...d, protein: name, cut: null }));
@@ -338,7 +352,7 @@ export default function Builder() {
                     <h4>Accessories (any number)</h4>
                     {(() => {
                         const keyOf = (a: Accessory) =>
-                            accGroupBy === "region" ? a.region : a.type;
+                            accGroupBy === "region" ? a.regions : [a.type];
                         const groups = [...new Set(accessories.map(keyOf))];
                         return (
                             <>
@@ -353,47 +367,55 @@ export default function Builder() {
                                         selected={accGroupBy === "region"}
                                         onClick={() => setAccGroupBy("region")}
                                     />
+                                    <Chip
+                                        label="Matrix"
+                                        selected={accGroupBy === "matrix"}
+                                        onClick={() => setAccGroupBy("matrix")}
+                                    />
                                 </div>
-                                {groups.map((group) => (
-                                    <Fragment key={group}>
-                                        <h5>{group}</h5>
-                                        <div className="chips">
-                                            {accessories
-                                                .filter((a) => keyOf(a) === group)
-                                                .map((a) => (
-                                                    <Chip
-                                                        key={a.name}
-                                                        label={a.name}
-                                                        selected={draft.accessories.includes(
-                                                            a.name,
-                                                        )}
-                                                        onClick={() =>
-                                                            pick(
-                                                                "accessories",
-                                                                draft.accessories.includes(
+                                {accGroupBy === "matrix" ? (
+                                    <MatrixView
+                                        items={accessories}
+                                        rowKey={(a: Accessory) => a.regions}
+                                        colKey={(a: Accessory) => [a.type]}
+                                        selectedNames={draft.accessories}
+                                        onToggle={toggleAccessory}
+                                    />
+                                ) : (
+                                    groups.map((group) => (
+                                        <Fragment key={group.join(" | ")}>
+                                            <h5>{group.join(" / ")}</h5>
+                                            <div className="chips">
+                                                {accessories
+                                                    .filter(
+                                                        (a) => keyOf(a) === group,
+                                                    )
+                                                    .map((a) => (
+                                                        <Chip
+                                                            key={a.name}
+                                                            label={a.name}
+                                                            selected={draft.accessories.includes(
+                                                                a.name,
+                                                            )}
+                                                            onClick={() =>
+                                                                toggleAccessory(
                                                                     a.name,
                                                                 )
-                                                                    ? draft.accessories.filter(
-                                                                          (x) =>
-                                                                              x !==
-                                                                              a.name,
-                                                                      )
-                                                                    : [
-                                                                          ...draft.accessories,
-                                                                          a.name,
-                                                                      ],
-                                                                )
-                                                        }
-                                                    />
-                                                ))}
-                                        </div>
-                                    </Fragment>
-                                ))}
+                                                            }
+                                                        />
+                                                    ))}
+                                            </div>
+                                        </Fragment>
+                                    ))
+                                )}
                             </>
                         );
                     })()}
                     <div className="step-nav">
-                        <button className="ghost" onClick={() => advance()}>
+                        <button
+                            className="ghost"
+                            onClick={() => advance()}
+                        >
                             Next
                         </button>
                     </div>
@@ -405,7 +427,7 @@ export default function Builder() {
                     <h4>Sauce</h4>
                     {(() => {
                         const keyOf = (s: Sauce) =>
-                            groupBy === "region" ? s.region : s.profile;
+                            groupBy === "region" ? s.regions : [s.profile];
                         const groups = [...new Set(sauces.map(keyOf))];
                         return (
                             <>
@@ -420,31 +442,68 @@ export default function Builder() {
                                         selected={groupBy === "profile"}
                                         onClick={() => setGroupBy("profile")}
                                     />
+                                    <Chip
+                                        label="Matrix"
+                                        selected={groupBy === "matrix"}
+                                        onClick={() => setGroupBy("matrix")}
+                                    />
                                 </div>
-                                {groups.map((group) => (
-                                    <Fragment key={group}>
-                                        <h5>{group}</h5>
-                                        <div className="chips">
-                                            {sauces
-                                                .filter(
-                                                    (s) => keyOf(s) === group,
-                                                )
-                                                .map((s) => (
-                                                    <Chip
-                                                        key={s.name}
-                                                        label={`${s.name} — ${s.flavor}`}
-                                                        selected={
-                                                            draft.sauce ===
-                                                            s.name
-                                                        }
-                                                        onClick={() =>
-                                                            pickSauce(s.name)
-                                                        }
-                                                    />
-                                                ))}
+                                {groupBy === "matrix" ? (
+                                    <>
+                                        <MatrixView
+                                            items={sauces}
+                                            rowKey={(s: Sauce) => s.regions}
+                                            colKey={(s: Sauce) => [s.profile]}
+                                            selectedNames={
+                                                draft.sauce
+                                                    ? [draft.sauce]
+                                                    : []
+                                            }
+                                            onToggle={(name) =>
+                                                setDraft((d) => ({
+                                                    ...d,
+                                                    sauce:
+                                                        d.sauce === name
+                                                            ? null
+                                                            : name,
+                                                }))
+                                            }
+                                        />
+                                        <div className="step-nav">
+                                            <button
+                                                className="ghost"
+                                                onClick={() => advance()}
+                                            >
+                                                Next
+                                            </button>
                                         </div>
-                                    </Fragment>
-                                ))}
+                                    </>
+                                ) : (
+                                    groups.map((group) => (
+                                        <Fragment key={group.join(" | ")}>
+                                            <h5>{group.join(" / ")}</h5>
+                                            <div className="chips">
+                                                {sauces
+                                                    .filter(
+                                                        (s) => keyOf(s) === group,
+                                                    )
+                                                    .map((s) => (
+                                                        <Chip
+                                                            key={s.name}
+                                                            label={`${s.name} — ${s.flavor}`}
+                                                            selected={
+                                                                draft.sauce ===
+                                                                s.name
+                                                            }
+                                                            onClick={() =>
+                                                                pickSauce(s.name)
+                                                            }
+                                                        />
+                                                    ))}
+                                            </div>
+                                        </Fragment>
+                                    ))
+                                )}
                             </>
                         );
                     })()}

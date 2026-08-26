@@ -1,51 +1,379 @@
 [
-  { "name": "shredded lettuce", "region": "Latin & Mexican", "type": "Fresh & crunchy" },
-  { "name": "cilantro-lime slaw", "region": "Latin & Mexican", "type": "Fresh & crunchy" },
-  { "name": "quick-pickled cucumber", "region": "East Asian", "type": "Fresh & crunchy" },
-  { "name": "pickled onions", "region": "Latin & Mexican", "type": "Fresh & crunchy" },
-  { "name": "pickled jalapeños", "region": "Latin & Mexican", "type": "Fresh & crunchy" },
-  { "name": "bean sprouts", "region": "East Asian", "type": "Fresh & crunchy" },
-  { "name": "radish slices", "region": "Latin & Mexican", "type": "Fresh & crunchy" },
-  { "name": "shredded carrots", "region": "European & American", "type": "Fresh & crunchy" },
-  { "name": "kimchi", "region": "East Asian", "type": "Fresh & crunchy" },
-  { "name": "pico de gallo", "region": "Latin & Mexican", "type": "Fresh & crunchy" },
-  { "name": "scallions", "region": "East Asian", "type": "Herbs & alliums" },
-  { "name": "fresh cilantro", "region": "Latin & Mexican", "type": "Herbs & alliums" },
-  { "name": "Thai basil", "region": "Southeast Asian", "type": "Herbs & alliums" },
-  { "name": "torn mint", "region": "South Asian", "type": "Herbs & alliums" },
-  { "name": "fried garlic chips", "region": "Southeast Asian", "type": "Herbs & alliums" },
-  { "name": "crispy fried shallots", "region": "Southeast Asian", "type": "Herbs & alliums" },
-  { "name": "charred corn", "region": "Latin & Mexican", "type": "Cooked vegetables" },
-  { "name": "sautéed peppers & onions", "region": "Latin & Mexican", "type": "Cooked vegetables" },
-  { "name": "steamed broccoli", "region": "European & American", "type": "Cooked vegetables" },
-  { "name": "roasted cauliflower", "region": "South Asian", "type": "Cooked vegetables" },
-  { "name": "blistered green beans", "region": "East Asian", "type": "Cooked vegetables" },
-  { "name": "garlicky greens", "region": "European & American", "type": "Cooked vegetables" },
-  { "name": "sautéed mushrooms", "region": "European & American", "type": "Cooked vegetables" },
-  { "name": "roasted sweet potato cubes", "region": "European & American", "type": "Cooked vegetables" },
-  { "name": "avocado", "region": "Latin & Mexican", "type": "Creamy & rich" },
-  { "name": "guacamole", "region": "Latin & Mexican", "type": "Creamy & rich" },
-  { "name": "sour cream", "region": "European & American", "type": "Creamy & rich" },
-  { "name": "crumbled queso fresco", "region": "Latin & Mexican", "type": "Creamy & rich" },
-  { "name": "crumbled feta", "region": "Mediterranean & Middle Eastern", "type": "Creamy & rich" },
-  { "name": "shredded cheese", "region": "European & American", "type": "Creamy & rich" },
-  { "name": "dollop of yogurt", "region": "Mediterranean & Middle Eastern", "type": "Creamy & rich" },
-  { "name": "crispy fried egg", "region": "East Asian", "type": "Eggs" },
-  { "name": "jammy soft-boiled egg", "region": "East Asian", "type": "Eggs" },
-  { "name": "crushed peanuts", "region": "Southeast Asian", "type": "Crunchy toppings" },
-  { "name": "toasted sesame seeds", "region": "East Asian", "type": "Crunchy toppings" },
-  { "name": "crispy wonton strips", "region": "East Asian", "type": "Crunchy toppings" },
-  { "name": "toasted coconut flakes", "region": "Southeast Asian", "type": "Crunchy toppings" },
-  { "name": "spiced pumpkin seeds", "region": "Latin & Mexican", "type": "Crunchy toppings" },
-  { "name": "fried cashews", "region": "South Asian", "type": "Crunchy toppings" },
-  { "name": "tortilla strips", "region": "Latin & Mexican", "type": "Crunchy toppings" },
-  { "name": "sliced fresh chilies", "region": "Southeast Asian", "type": "Briny & fiery" },
-  { "name": "chili crisp", "region": "East Asian", "type": "Briny & fiery" },
-  { "name": "giardiniera", "region": "European & American", "type": "Briny & fiery" },
-  { "name": "kalamata olives", "region": "Mediterranean & Middle Eastern", "type": "Briny & fiery" },
-  { "name": "capers", "region": "European & American", "type": "Briny & fiery" },
-  { "name": "seasoned black beans", "region": "Latin & Mexican", "type": "Sides & legumes" },
-  { "name": "refried beans", "region": "Latin & Mexican", "type": "Sides & legumes" },
-  { "name": "edamame", "region": "East Asian", "type": "Sides & legumes" },
-  { "name": "cucumber raita", "region": "South Asian", "type": "Sides & legumes" }
+  {
+    "name": "shredded lettuce",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "Latin & Mexican",
+      "European & American"
+    ]
+  },
+  {
+    "name": "cilantro-lime slaw",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "quick-pickled cucumber",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "East Asian",
+      "European & American"
+    ]
+  },
+  {
+    "name": "pickled onions",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "Latin & Mexican",
+      "Mediterranean & Middle Eastern"
+    ]
+  },
+  {
+    "name": "pickled jalapeños",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "bean sprouts",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "East Asian",
+      "Southeast Asian"
+    ]
+  },
+  {
+    "name": "radish slices",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "Latin & Mexican",
+      "East Asian"
+    ]
+  },
+  {
+    "name": "shredded carrots",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "European & American",
+      "Southeast Asian"
+    ]
+  },
+  {
+    "name": "kimchi",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "East Asian"
+    ]
+  },
+  {
+    "name": "pico de gallo",
+    "type": "Fresh & crunchy",
+    "regions": [
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "scallions",
+    "type": "Herbs & alliums",
+    "regions": [
+      "East Asian",
+      "Southeast Asian"
+    ]
+  },
+  {
+    "name": "fresh cilantro",
+    "type": "Herbs & alliums",
+    "regions": [
+      "Latin & Mexican",
+      "Southeast Asian",
+      "South Asian",
+      "East Asian"
+    ]
+  },
+  {
+    "name": "Thai basil",
+    "type": "Herbs & alliums",
+    "regions": [
+      "Southeast Asian"
+    ]
+  },
+  {
+    "name": "torn mint",
+    "type": "Herbs & alliums",
+    "regions": [
+      "South Asian",
+      "Southeast Asian",
+      "Mediterranean & Middle Eastern"
+    ]
+  },
+  {
+    "name": "fried garlic chips",
+    "type": "Herbs & alliums",
+    "regions": [
+      "Southeast Asian",
+      "East Asian"
+    ]
+  },
+  {
+    "name": "crispy fried shallots",
+    "type": "Herbs & alliums",
+    "regions": [
+      "Southeast Asian",
+      "South Asian"
+    ]
+  },
+  {
+    "name": "charred corn",
+    "type": "Cooked vegetables",
+    "regions": [
+      "Latin & Mexican",
+      "European & American"
+    ]
+  },
+  {
+    "name": "sautéed peppers & onions",
+    "type": "Cooked vegetables",
+    "regions": [
+      "Latin & Mexican",
+      "European & American"
+    ]
+  },
+  {
+    "name": "steamed broccoli",
+    "type": "Cooked vegetables",
+    "regions": [
+      "European & American"
+    ]
+  },
+  {
+    "name": "roasted cauliflower",
+    "type": "Cooked vegetables",
+    "regions": [
+      "South Asian",
+      "European & American"
+    ]
+  },
+  {
+    "name": "blistered green beans",
+    "type": "Cooked vegetables",
+    "regions": [
+      "East Asian"
+    ]
+  },
+  {
+    "name": "garlicky greens",
+    "type": "Cooked vegetables",
+    "regions": [
+      "European & American",
+      "Mediterranean & Middle Eastern"
+    ]
+  },
+  {
+    "name": "sautéed mushrooms",
+    "type": "Cooked vegetables",
+    "regions": [
+      "European & American",
+      "East Asian"
+    ]
+  },
+  {
+    "name": "roasted sweet potato cubes",
+    "type": "Cooked vegetables",
+    "regions": [
+      "European & American"
+    ]
+  },
+  {
+    "name": "avocado",
+    "type": "Creamy & rich",
+    "regions": [
+      "Latin & Mexican",
+      "European & American"
+    ]
+  },
+  {
+    "name": "guacamole",
+    "type": "Creamy & rich",
+    "regions": [
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "sour cream",
+    "type": "Creamy & rich",
+    "regions": [
+      "European & American",
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "crumbled queso fresco",
+    "type": "Creamy & rich",
+    "regions": [
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "crumbled feta",
+    "type": "Creamy & rich",
+    "regions": [
+      "Mediterranean & Middle Eastern",
+      "European & American"
+    ]
+  },
+  {
+    "name": "shredded cheese",
+    "type": "Creamy & rich",
+    "regions": [
+      "European & American",
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "dollop of yogurt",
+    "type": "Creamy & rich",
+    "regions": [
+      "Mediterranean & Middle Eastern",
+      "South Asian"
+    ]
+  },
+  {
+    "name": "crispy fried egg",
+    "type": "Eggs",
+    "regions": [
+      "East Asian",
+      "Southeast Asian"
+    ]
+  },
+  {
+    "name": "jammy soft-boiled egg",
+    "type": "Eggs",
+    "regions": [
+      "East Asian"
+    ]
+  },
+  {
+    "name": "crushed peanuts",
+    "type": "Crunchy toppings",
+    "regions": [
+      "Southeast Asian",
+      "South Asian"
+    ]
+  },
+  {
+    "name": "toasted sesame seeds",
+    "type": "Crunchy toppings",
+    "regions": [
+      "East Asian"
+    ]
+  },
+  {
+    "name": "crispy wonton strips",
+    "type": "Crunchy toppings",
+    "regions": [
+      "East Asian"
+    ]
+  },
+  {
+    "name": "toasted coconut flakes",
+    "type": "Crunchy toppings",
+    "regions": [
+      "Southeast Asian",
+      "South Asian"
+    ]
+  },
+  {
+    "name": "spiced pumpkin seeds",
+    "type": "Crunchy toppings",
+    "regions": [
+      "Latin & Mexican",
+      "Mediterranean & Middle Eastern"
+    ]
+  },
+  {
+    "name": "fried cashews",
+    "type": "Crunchy toppings",
+    "regions": [
+      "South Asian",
+      "Southeast Asian"
+    ]
+  },
+  {
+    "name": "tortilla strips",
+    "type": "Crunchy toppings",
+    "regions": [
+      "Latin & Mexican",
+      "European & American"
+    ]
+  },
+  {
+    "name": "sliced fresh chilies",
+    "type": "Briny & fiery",
+    "regions": [
+      "Southeast Asian",
+      "South Asian",
+      "East Asian",
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "chili crisp",
+    "type": "Briny & fiery",
+    "regions": [
+      "East Asian"
+    ]
+  },
+  {
+    "name": "giardiniera",
+    "type": "Briny & fiery",
+    "regions": [
+      "European & American"
+    ]
+  },
+  {
+    "name": "kalamata olives",
+    "type": "Briny & fiery",
+    "regions": [
+      "Mediterranean & Middle Eastern"
+    ]
+  },
+  {
+    "name": "capers",
+    "type": "Briny & fiery",
+    "regions": [
+      "European & American",
+      "Mediterranean & Middle Eastern"
+    ]
+  },
+  {
+    "name": "seasoned black beans",
+    "type": "Sides & legumes",
+    "regions": [
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "refried beans",
+    "type": "Sides & legumes",
+    "regions": [
+      "Latin & Mexican"
+    ]
+  },
+  {
+    "name": "edamame",
+    "type": "Sides & legumes",
+    "regions": [
+      "East Asian"
+    ]
+  },
+  {
+    "name": "cucumber raita",
+    "type": "Sides & legumes",
+    "regions": [
+      "South Asian"
+    ]
+  }
 ]

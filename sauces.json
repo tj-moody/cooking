@@ -5,8 +5,10 @@
     "flavor": "Umami, rich",
     "ingredients": "Butter, garlic, miso, soy, sesame oil",
     "notes": "Melt butter, sauté garlic, stir in miso + soy",
-    "region": "East Asian",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Sundried Tomato Cream",
@@ -14,8 +16,11 @@
     "flavor": "Tangy, creamy",
     "ingredients": "Sundried tomatoes, cream/yogurt, olive oil",
     "notes": "Blend, heat, toss with beef",
-    "region": "European & American",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "European & American",
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Ginger-Scallion Soy",
@@ -23,8 +28,10 @@
     "flavor": "Bright, savory",
     "ingredients": "Scallions, ginger, garlic, soy sauce, rice vinegar, chili oil",
     "notes": "Blend, warm lightly",
-    "region": "East Asian",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Chimichurri-ish Green",
@@ -32,8 +39,11 @@
     "flavor": "Herbaceous, tangy",
     "ingredients": "Parsley/cilantro, garlic, vinegar, olive oil, chili flakes",
     "notes": "Blend raw or warm briefly",
-    "region": "Latin & Mexican",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "Latin & Mexican",
+      "European & American"
+    ]
   },
   {
     "name": "Spicy Peanut",
@@ -41,8 +51,11 @@
     "flavor": "Nutty, spicy",
     "ingredients": "Peanut butter, soy sauce, rice vinegar, chili paste",
     "notes": "Blend, warm, toss",
-    "region": "Southeast Asian",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "Southeast Asian",
+      "South Asian"
+    ]
   },
   {
     "name": "Balsamic-Honey Glaze",
@@ -50,8 +63,10 @@
     "flavor": "Sweet, tangy",
     "ingredients": "Balsamic vinegar, honey, Dijon mustard",
     "notes": "Bubble briefly, toss to coat",
-    "region": "European & American",
-    "profile": "Sweet & glazed"
+    "profile": "Sweet & glazed",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Quick Coconut Curry",
@@ -59,8 +74,11 @@
     "flavor": "Creamy, aromatic",
     "ingredients": "Curry powder/paste, coconut milk, fish sauce, lime juice, sugar",
     "notes": "Sauté spices, add coconut milk, simmer 2-3 min",
-    "region": "South Asian",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "South Asian",
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Yogurt-Turmeric Curry",
@@ -68,8 +86,11 @@
     "flavor": "Tangy, light",
     "ingredients": "Yogurt, turmeric, cumin, coriander, garlic, ginger, lemon juice",
     "notes": "Blend, warm gently (don't boil)",
-    "region": "South Asian",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "South Asian",
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Madras Tomato Curry",
@@ -77,8 +98,10 @@
     "flavor": "Tomato-forward, warm",
     "ingredients": "Onion/garlic, Madras powder, crushed tomatoes, cream/butter",
     "notes": "Sauté base, add spices + tomato, simmer",
-    "region": "South Asian",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "South Asian"
+    ]
   },
   {
     "name": "Thai Red Curry Blitz",
@@ -86,8 +109,10 @@
     "flavor": "Spicy, rich",
     "ingredients": "Red curry paste, coconut milk, broth, fish sauce, sugar",
     "notes": "Fry paste, add liquids, heat through",
-    "region": "Southeast Asian",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Green Herb Coconut Curry",
@@ -95,8 +120,10 @@
     "flavor": "Fresh, herbal, creamy",
     "ingredients": "Herbs, garlic, chili, lime juice, coconut milk",
     "notes": "Blend, warm gently, toss chicken",
-    "region": "Southeast Asian",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Lemon-Caper Butter",
@@ -104,8 +131,10 @@
     "flavor": "Bright, savory",
     "ingredients": "Butter, lemon juice, capers, garlic",
     "notes": "Melt butter, stir in lemon and capers",
-    "region": "European & American",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Honey Mustard",
@@ -113,8 +142,10 @@
     "flavor": "Sweet, tangy",
     "ingredients": "Dijon mustard, honey, lemon juice, olive oil",
     "notes": "Whisk together, warm if desired",
-    "region": "European & American",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Salsa Verde",
@@ -122,8 +153,11 @@
     "flavor": "Zesty, fresh",
     "ingredients": "Parsley, capers, anchovy (optional), lemon, olive oil",
     "notes": "Blend or finely chop, serve raw",
-    "region": "European & American",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "European & American",
+      "Latin & Mexican"
+    ]
   },
   {
     "name": "Chipotle-Lime Cream",
@@ -131,8 +165,10 @@
     "flavor": "Smoky, tangy",
     "ingredients": "Chipotles in adobo, lime, sour cream or yogurt",
     "notes": "Blend, toss warm with beef",
-    "region": "Latin & Mexican",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "Latin & Mexican"
+    ]
   },
   {
     "name": "Gojujang-Honey",
@@ -140,8 +176,10 @@
     "flavor": "Sweet, spicy, umami",
     "ingredients": "Gojujang, honey, soy sauce, rice vinegar",
     "notes": "Heat together, toss to coat",
-    "region": "East Asian",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Tzatziki-Inspired",
@@ -149,8 +187,10 @@
     "flavor": "Cool, tangy",
     "ingredients": "Yogurt, cucumber, garlic, lemon juice, dill",
     "notes": "Serve cold or gently warm",
-    "region": "Mediterranean & Middle Eastern",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Pesto Cream",
@@ -158,8 +198,10 @@
     "flavor": "Herbaceous, rich",
     "ingredients": "Pesto, cream or Greek yogurt",
     "notes": "Mix and heat, toss with meat",
-    "region": "European & American",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Sesame-Garlic",
@@ -167,8 +209,10 @@
     "flavor": "Nutty, savory",
     "ingredients": "Sesame oil, garlic, soy sauce, mirin/sugar",
     "notes": "Heat sesame oil, garlic, add liquids, coat beef",
-    "region": "East Asian",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Smoky Paprika Butter",
@@ -176,8 +220,11 @@
     "flavor": "Warm, smoky",
     "ingredients": "Butter, smoked paprika, garlic, lemon juice",
     "notes": "Melt butter, stir in rest",
-    "region": "European & American",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "European & American",
+      "Latin & Mexican"
+    ]
   },
   {
     "name": "Tahini-Lemon Sauce",
@@ -185,8 +232,10 @@
     "flavor": "Nutty, tangy",
     "ingredients": "Tahini, lemon juice, garlic, water",
     "notes": "Whisk until creamy",
-    "region": "Mediterranean & Middle Eastern",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Sichuan Chili Oil Soy",
@@ -194,8 +243,10 @@
     "flavor": "Spicy, numbing",
     "ingredients": "Chili oil, soy, vinegar, garlic, sugar",
     "notes": "Toss warm with meat",
-    "region": "East Asian",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Coconut-Lime Sauce",
@@ -203,8 +254,10 @@
     "flavor": "Bright, creamy",
     "ingredients": "Coconut milk, lime zest/juice, garlic, chili",
     "notes": "Simmer briefly",
-    "region": "Southeast Asian",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Quick Hoisin Stir-Fry",
@@ -212,8 +265,10 @@
     "flavor": "Sweet-savory",
     "ingredients": "Hoisin, soy, rice vinegar, garlic, sesame oil",
     "notes": "Whisk and toss hot",
-    "region": "East Asian",
-    "profile": "Sweet & glazed"
+    "profile": "Sweet & glazed",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Shallot-Vinegar Glaze",
@@ -221,8 +276,10 @@
     "flavor": "Tangy, sweet-savory",
     "ingredients": "Minced shallot, vinegar, honey, olive oil",
     "notes": "Briefly sauté, reduce 1-2 min",
-    "region": "European & American",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Orange-Soy Glaze",
@@ -230,8 +287,10 @@
     "flavor": "Sweet, citrusy",
     "ingredients": "Orange juice, soy sauce, garlic, ginger, cornstarch (opt)",
     "notes": "Simmer to thicken",
-    "region": "East Asian",
-    "profile": "Sweet & glazed"
+    "profile": "Sweet & glazed",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Caper-Dijon Cream",
@@ -239,8 +298,10 @@
     "flavor": "Briny, sharp, creamy",
     "ingredients": "Cream or yogurt, capers, Dijon, lemon",
     "notes": "Blend or whisk, heat gently",
-    "region": "European & American",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Harissa Yogurt",
@@ -248,8 +309,10 @@
     "flavor": "Spicy, creamy",
     "ingredients": "Harissa paste, yogurt, lemon juice",
     "notes": "Mix raw or warm slightly",
-    "region": "Mediterranean & Middle Eastern",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Avocado Cilantro Lime",
@@ -257,8 +320,10 @@
     "flavor": "Creamy, fresh",
     "ingredients": "Avocado, cilantro, lime, garlic, olive oil",
     "notes": "Blend raw, optional warm-up",
-    "region": "Latin & Mexican",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "Latin & Mexican"
+    ]
   },
   {
     "name": "Coconut-Curry Mustard",
@@ -266,8 +331,10 @@
     "flavor": "Creamy, sharp",
     "ingredients": "Coconut milk, mustard, curry powder, garlic",
     "notes": "Simmer briefly",
-    "region": "South Asian",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "South Asian"
+    ]
   },
   {
     "name": "Tomato-Garlic Pan Sauce",
@@ -275,8 +342,10 @@
     "flavor": "Bright, rich",
     "ingredients": "Cherry/grape tomatoes, garlic, olive oil",
     "notes": "Sauté tomatoes, smash, finish with butter",
-    "region": "European & American",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Anchovy-Garlic Oil",
@@ -284,8 +353,11 @@
     "flavor": "Savory, salty",
     "ingredients": "Anchovies, garlic, olive oil, chili flakes",
     "notes": "Melt anchovy in oil, toss beef",
-    "region": "European & American",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "European & American",
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Mushroom Cream Pan Sauce",
@@ -293,8 +365,10 @@
     "flavor": "Earthy, rich",
     "ingredients": "Mushrooms, butter, garlic, cream/milk, soy",
     "notes": "Sauté mushrooms, add cream + soy",
-    "region": "European & American",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Onion-Balsamic Reduction",
@@ -302,8 +376,10 @@
     "flavor": "Sweet-savory, tangy",
     "ingredients": "Sliced onions, balsamic, butter, beef stock",
     "notes": "Caramelize onions briefly, deglaze",
-    "region": "European & American",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Garlic-Tomato Butter",
@@ -311,8 +387,10 @@
     "flavor": "Savory, velvety",
     "ingredients": "Garlic, canned tomatoes, butter, parsley",
     "notes": "Simmer crushed tomatoes w/ garlic, finish with butter",
-    "region": "European & American",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Coconut Cashew Curry",
@@ -320,8 +398,11 @@
     "flavor": "Creamy, nutty, bold",
     "ingredients": "Coconut milk, cashew butter, curry powder",
     "notes": "Simmer all together, adjust spice",
-    "region": "South Asian",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "South Asian",
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Velvety Soy-Ginger Gravy",
@@ -329,8 +410,10 @@
     "flavor": "Umami, thick, warm",
     "ingredients": "Soy, ginger, garlic, cornstarch, stock",
     "notes": "Simmer soy + aromatics, thicken with starch",
-    "region": "East Asian",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "French Onion-Inspired",
@@ -338,8 +421,10 @@
     "flavor": "Deep, savory, herby",
     "ingredients": "Sautéed onions, thyme, beef stock, dash of cream",
     "notes": "Quick simmer, rich and thick",
-    "region": "European & American",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Red Wine Pan Sauce",
@@ -347,8 +432,10 @@
     "flavor": "Luxurious, deep",
     "ingredients": "Red wine, butter, garlic, thyme, mustard",
     "notes": "Deglaze with wine, finish with butter",
-    "region": "European & American",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "White Bean Purée Sauce",
@@ -356,8 +443,11 @@
     "flavor": "Savory, creamy, filling",
     "ingredients": "Canned white beans, garlic, lemon, broth, herbs",
     "notes": "Blend and warm, thick and hearty",
-    "region": "European & American",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "European & American",
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Coconut-Lentil Curry",
@@ -365,8 +455,10 @@
     "flavor": "Rich, creamy, earthy",
     "ingredients": "Cooked lentils, coconut milk, curry spices",
     "notes": "Mash lentils or blend for thickness",
-    "region": "South Asian",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "South Asian"
+    ]
   },
   {
     "name": "Romesco (Quick Blender)",
@@ -374,8 +466,11 @@
     "flavor": "Smoky, nutty, full",
     "ingredients": "Roasted red peppers, almonds, garlic, olive oil",
     "notes": "Blend raw, heat or serve cold",
-    "region": "Mediterranean & Middle Eastern",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "Mediterranean & Middle Eastern",
+      "European & American"
+    ]
   },
   {
     "name": "Brown Butter Sage Cream",
@@ -383,8 +478,10 @@
     "flavor": "Nutty, lush",
     "ingredients": "Brown butter, cream/milk, garlic, sage",
     "notes": "Brown butter first, add garlic + cream",
-    "region": "European & American",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "European & American"
+    ]
   },
   {
     "name": "Carrot-Ginger Coconut",
@@ -392,8 +489,11 @@
     "flavor": "Sweet-savory, thick",
     "ingredients": "Cooked carrots, coconut milk, ginger, garlic",
     "notes": "Blend and simmer",
-    "region": "Southeast Asian",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "Southeast Asian",
+      "East Asian"
+    ]
   },
   {
     "name": "Black Garlic Umami Bomb",
@@ -401,8 +501,10 @@
     "flavor": "Deep, funky-sweet",
     "ingredients": "Black garlic, soy, vinegar, butter",
     "notes": "Mash black garlic, sauté into butter",
-    "region": "East Asian",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Chili Bean Sauce (Doubanjiang)",
@@ -410,8 +512,10 @@
     "flavor": "Spicy, meaty",
     "ingredients": "Doubanjiang, garlic, soy, broth, sugar",
     "notes": "Sauté, add broth, simmer",
-    "region": "East Asian",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "East Asian"
+    ]
   },
   {
     "name": "Tomato-Lentil Curry",
@@ -419,8 +523,11 @@
     "flavor": "Thick, earthy, saucy",
     "ingredients": "Cooked lentils, tomato paste, curry powder, garlic",
     "notes": "Mash, simmer with water or broth",
-    "region": "South Asian",
-    "profile": "Umami & savory"
+    "profile": "Umami & savory",
+    "regions": [
+      "South Asian",
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Roasted Tomatillo Salsa",
@@ -428,8 +535,10 @@
     "flavor": "Tangy, smoky, fresh",
     "ingredients": "Tomatillos, garlic, jalapeño or serrano, cilantro, lime, onion",
     "notes": "Char tomatillos + chilies under broiler, blend raw with rest",
-    "region": "Latin & Mexican",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "Latin & Mexican"
+    ]
   },
   {
     "name": "Aji Verde (Peruvian)",
@@ -437,8 +546,10 @@
     "flavor": "Spicy, herby, creamy",
     "ingredients": "Cilantro, jalapeño, garlic, lime, mayo or queso fresco, aji amarillo paste if you have it",
     "notes": "Blend everything raw; thin with water",
-    "region": "Latin & Mexican",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "Latin & Mexican"
+    ]
   },
   {
     "name": "Mojo Criollo",
@@ -446,8 +557,10 @@
     "flavor": "Bright, garlicky, citrusy",
     "ingredients": "Sour orange or lime+orange juice, lots of garlic, oregano, cumin, olive oil",
     "notes": "Whisk raw; doubles as a marinade",
-    "region": "Latin & Mexican",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "Latin & Mexican"
+    ]
   },
   {
     "name": "Guajillo-Adobo Simmer",
@@ -455,8 +568,10 @@
     "flavor": "Smoky, deep, medium-spicy",
     "ingredients": "Dried guajillo + ancho chilies, garlic, vinegar, tomato, cumin, oregano",
     "notes": "Soak chilies hot 15 min, blend smooth, simmer 10 min",
-    "region": "Latin & Mexican",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "Latin & Mexican"
+    ]
   },
   {
     "name": "Chile de Árbol Oil",
@@ -464,8 +579,11 @@
     "flavor": "Fiery, nutty",
     "ingredients": "Dried árbol chilies, garlic, neutral oil, splash of vinegar",
     "notes": "Toast chilies + garlic in oil, cool, blend or leave chunky",
-    "region": "Latin & Mexican",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "Latin & Mexican",
+      "East Asian"
+    ]
   },
   {
     "name": "Nước Chấm",
@@ -473,8 +591,10 @@
     "flavor": "Salty-sweet-sour, bright",
     "ingredients": "Fish sauce, lime juice, sugar, garlic, bird eye chilies, water",
     "notes": "Whisk until sugar dissolves; universal dipping sauce",
-    "region": "Southeast Asian",
-    "profile": "Tangy & bright"
+    "profile": "Tangy & bright",
+    "regions": [
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Sambal Oelek-Lime",
@@ -482,8 +602,10 @@
     "flavor": "Hot, fresh, sharp",
     "ingredients": "Sambal oelek, lime juice, garlic, pinch of sugar, scallions",
     "notes": "Stir together raw; toss through fried rice or noodles",
-    "region": "Southeast Asian",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Caramel Fish Sauce Glaze",
@@ -491,8 +613,10 @@
     "flavor": "Sweet-savory, glossy",
     "ingredients": "Sugar caramelized, fish sauce, shallot, garlic, black pepper, water",
     "notes": "Melt sugar to amber, careful-add fish sauce + water, reduce glossy",
-    "region": "Southeast Asian",
-    "profile": "Sweet & glazed"
+    "profile": "Sweet & glazed",
+    "regions": [
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Lemongrass-Lime Dressing",
@@ -500,8 +624,10 @@
     "flavor": "Zesty, floral, light-hot",
     "ingredients": "Minced lemongrass, lime zest + juice, fish sauce, sugar, chili, garlic",
     "notes": "Pound or mince aromatics fine, whisk raw",
-    "region": "Southeast Asian",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Gado-Gado Peanut",
@@ -509,8 +635,10 @@
     "flavor": "Rich, nutty, sweet-hot",
     "ingredients": "Peanut butter, kecap manis or soy+honey, lime, garlic, chili, coconut milk to loosen",
     "notes": "Blend raw, warm gently; thicker than Spicy Peanut",
-    "region": "Southeast Asian",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "Southeast Asian"
+    ]
   },
   {
     "name": "Mint-Cilantro Chutney",
@@ -518,8 +646,11 @@
     "flavor": "Fresh, hot, tangy",
     "ingredients": "Mint, cilantro, green chilies, ginger, lemon, yogurt optional",
     "notes": "Blend raw; the universal Indian green sauce",
-    "region": "South Asian",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "South Asian",
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "Tamarind-Meethi Chutney",
@@ -527,8 +658,10 @@
     "flavor": "Sweet-sour, warm spice",
     "ingredients": "Tamarind pulp, jaggery or brown sugar, cumin, ginger, dried mint",
     "notes": "Simmer 10 min until syrupy",
-    "region": "South Asian",
-    "profile": "Sweet & glazed"
+    "profile": "Sweet & glazed",
+    "regions": [
+      "South Asian"
+    ]
   },
   {
     "name": "Garlic Raita",
@@ -536,8 +669,11 @@
     "flavor": "Cooling, garlicky",
     "ingredients": "Whole-milk yogurt, grated garlic, roasted cumin, salt, cilantro",
     "notes": "Stir raw; essential alongside spicy curries",
-    "region": "South Asian",
-    "profile": "Cooling & fresh"
+    "profile": "Cooling & fresh",
+    "regions": [
+      "South Asian",
+      "Mediterranean & Middle Eastern"
+    ]
   },
   {
     "name": "White Korma Cream",
@@ -545,8 +681,10 @@
     "flavor": "Mild, rich, nutty",
     "ingredients": "Blended cashews + almonds, yogurt, cream, cardamom, mace, ghee",
     "notes": "Grind nuts with water, simmer gently with spices 10 min; do not boil hard",
-    "region": "South Asian",
-    "profile": "Creamy & rich"
+    "profile": "Creamy & rich",
+    "regions": [
+      "South Asian"
+    ]
   },
   {
     "name": "Vindaloo-Style Vinegar Chile",
@@ -554,7 +692,10 @@
     "flavor": "Sharp, fiery, tangy",
     "ingredients": "Kashmiri chilies, vinegar, garlic, ginger, mustard seeds, cloves, cinnamon",
     "notes": "Blend paste, fry in oil, simmer 8-10 min; also great as marinade",
-    "region": "South Asian",
-    "profile": "Hot & spicy"
+    "profile": "Hot & spicy",
+    "regions": [
+      "South Asian",
+      "Latin & Mexican"
+    ]
   }
 ]

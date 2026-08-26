@@ -117,6 +117,45 @@ td {
   vertical-align: top;
 }
 
+table.matrix td {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+table.matrix tbody th {
+  white-space: normal;
+  width: 1%;
+}
+
+table.matrix td.empty {
+  background: var(--row-hover);
+}
+
+button.matrix-item {
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text);
+  background: none;
+  border: none;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  text-align: left;
+}
+
+button.matrix-item:hover {
+  color: var(--text-dim);
+}
+
+button.matrix-item.selected {
+  font-weight: 600;
+}
+
+button.matrix-item .marker {
+  font-size: 0.7em;
+}
+
 button.sort {
   font: inherit;
   color: inherit;
@@ -221,6 +260,15 @@ button.ghost.active {
   flex-wrap: wrap;
   gap: 6px;
   margin: 0.25rem 0 1rem;
+}
+
+.chips.tabs-follow {
+  margin: 1rem 0 0;
+}
+
+.chips.tabs-follow ~ section h2 {
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 button.chip {
