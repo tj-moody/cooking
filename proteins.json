@@ -1,0 +1,7 @@
+[
+  { "name": "beef", "label": "Beef", "cuts": ["steak bites", "ground (80/20)", "flank/skirt", "chuck chunks"] },
+  { "name": "chicken", "label": "Chicken", "cuts": ["boneless thighs", "breast", "drumsticks", "ground"] },
+  { "name": "pork", "label": "Pork", "cuts": ["shoulder", "thick-cut chops", "ground", "belly"] },
+  { "name": "shrimp", "label": "Shrimp", "cuts": ["peeled & deveined", "jumbo"] },
+  { "name": "lamb", "label": "Lamb", "cuts": ["shoulder", "leg cubes", "ground"] }
+]

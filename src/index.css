@@ -67,6 +67,12 @@ h4 {
   margin: 0 0 0.35rem;
 }
 
+h5 {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin: 1rem 0 0.35rem;
+}
+
 .dim {
   color: var(--text-dim);
   font-weight: 400;
@@ -163,4 +169,170 @@ button.sort:hover {
 .foldout ul,
 .foldout ol {
   padding-left: 1.25rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 2px;
+  margin: 0.5rem 0 0;
+}
+
+button.ghost.active {
+  background: var(--btn-hover);
+  color: var(--text);
+}
+
+.steps {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 1rem 0;
+  list-style: none;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.steps li.current {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.steps li::after {
+  content: "";
+  display: inline-block;
+  width: 1.6em;
+}
+
+.steps li.done::after {
+  content: "✓";
+  padding-left: 0.35em;
+}
+
+.steps li.clickable {
+  cursor: pointer;
+}
+
+.steps li.clickable:hover {
+  color: var(--text);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0.25rem 0 1rem;
+}
+
+button.chip {
+  font: inherit;
+  color: var(--text);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+button.chip:hover {
+  background: var(--row-hover);
+}
+
+button.chip.selected {
+  border-color: var(--text-dim);
+  background: var(--text);
+  color: var(--bg);
+}
+
+button.chip.dimmed {
+  opacity: 0.45;
+}
+
+.step-nav {
+  display: flex;
+  gap: 6px;
+  margin-top: 0.25rem;
+}
+
+.step-nav .push-right {
+  margin-left: auto;
+}
+
+button.ghost:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+button.ghost:disabled:hover {
+  background: none;
+  color: var(--text-dim);
+}
+
+.summary {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 1.5rem;
+}
+
+.build-line {
+  margin: 0 0 0.75rem;
+  font-size: 15px;
+}
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 6px;
+  margin-bottom: 0.75rem;
+}
+
+button.build-cell,
+div.build-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.cell-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.linklike {
+  font: inherit;
+  font-size: 12px;
+  color: var(--text-dim);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.linklike:hover {
+  color: var(--text);
+}
+
+.cell-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+
+.cell-value {
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.cell-edit {
+  font-size: 12px;
+  color: var(--text-dim);
 }

@@ -1,378 +1,560 @@
 [
-    {
-        "name": "Garlic-Miso Butter",
-        "technique": "pan",
-        "flavor": "Umami, rich",
-        "protein": "Beef",
-        "ingredients": "Butter, garlic, miso, soy, sesame oil",
-        "notes": "Melt butter, sauté garlic, stir in miso + soy"
-    },
-    {
-        "name": "Sundried Tomato Cream",
-        "technique": "blend",
-        "flavor": "Tangy, creamy",
-        "protein": "Beef",
-        "ingredients": "Sundried tomatoes, cream/yogurt, olive oil",
-        "notes": "Blend, heat, toss with beef"
-    },
-    {
-        "name": "Ginger-Scallion Soy",
-        "technique": "blend",
-        "flavor": "Bright, savory",
-        "protein": "Beef",
-        "ingredients": "Scallions, ginger, garlic, soy sauce, rice vinegar, chili oil",
-        "notes": "Blend, warm lightly"
-    },
-    {
-        "name": "Chimichurri-ish Green",
-        "technique": "blend",
-        "flavor": "Herbaceous, tangy",
-        "protein": "Beef/Chicken",
-        "ingredients": "Parsley/cilantro, garlic, vinegar, olive oil, chili flakes",
-        "notes": "Blend raw or warm briefly"
-    },
-    {
-        "name": "Spicy Peanut",
-        "technique": "blend",
-        "flavor": "Nutty, spicy",
-        "protein": "Beef/Chicken",
-        "ingredients": "Peanut butter, soy sauce, rice vinegar, chili paste",
-        "notes": "Blend, warm, toss"
-    },
-    {
-        "name": "Balsamic-Honey Glaze",
-        "technique": "simmer",
-        "flavor": "Sweet, tangy",
-        "protein": "Beef",
-        "ingredients": "Balsamic vinegar, honey, Dijon mustard",
-        "notes": "Bubble briefly, toss to coat"
-    },
-    {
-        "name": "Quick Coconut Curry",
-        "technique": "simmer",
-        "flavor": "Creamy, aromatic",
-        "protein": "Beef/Chicken",
-        "ingredients": "Curry powder/paste, coconut milk, fish sauce, lime juice, sugar",
-        "notes": "Sauté spices, add coconut milk, simmer 2-3 min"
-    },
-    {
-        "name": "Yogurt-Turmeric Curry",
-        "technique": "blend",
-        "flavor": "Tangy, light",
-        "protein": "Chicken",
-        "ingredients": "Yogurt, turmeric, cumin, coriander, garlic, ginger, lemon juice",
-        "notes": "Blend, warm gently (don't boil)"
-    },
-    {
-        "name": "Madras Tomato Curry",
-        "technique": "simmer",
-        "flavor": "Tomato-forward, warm",
-        "protein": "Beef",
-        "ingredients": "Onion/garlic, Madras powder, crushed tomatoes, cream/butter",
-        "notes": "Sauté base, add spices + tomato, simmer"
-    },
-    {
-        "name": "Thai Red Curry Blitz",
-        "technique": "simmer",
-        "flavor": "Spicy, rich",
-        "protein": "Chicken",
-        "ingredients": "Red curry paste, coconut milk, broth, fish sauce, sugar",
-        "notes": "Fry paste, add liquids, heat through"
-    },
-    {
-        "name": "Green Herb Coconut Curry",
-        "technique": "blend",
-        "flavor": "Fresh, herbal, creamy",
-        "protein": "Chicken",
-        "ingredients": "Herbs, garlic, chili, lime juice, coconut milk",
-        "notes": "Blend, warm gently, toss chicken"
-    },
-    {
-        "name": "Lemon-Caper Butter",
-        "technique": "pan",
-        "flavor": "Bright, savory",
-        "protein": "Chicken",
-        "ingredients": "Butter, lemon juice, capers, garlic",
-        "notes": "Melt butter, stir in lemon and capers"
-    },
-    {
-        "name": "Honey Mustard",
-        "technique": "no-cook",
-        "flavor": "Sweet, tangy",
-        "protein": "Chicken",
-        "ingredients": "Dijon mustard, honey, lemon juice, olive oil",
-        "notes": "Whisk together, warm if desired"
-    },
-    {
-        "name": "Salsa Verde",
-        "technique": "no-cook",
-        "flavor": "Zesty, fresh",
-        "protein": "Chicken",
-        "ingredients": "Parsley, capers, anchovy (optional), lemon, olive oil",
-        "notes": "Blend or finely chop, serve raw"
-    },
-    {
-        "name": "Chipotle-Lime Cream",
-        "technique": "blend",
-        "flavor": "Smoky, tangy",
-        "protein": "Beef",
-        "ingredients": "Chipotles in adobo, lime, sour cream or yogurt",
-        "notes": "Blend, toss warm with beef"
-    },
-    {
-        "name": "Gojujang-Honey",
-        "technique": "simmer",
-        "flavor": "Sweet, spicy, umami",
-        "protein": "Beef/Chicken",
-        "ingredients": "Gojujang, honey, soy sauce, rice vinegar",
-        "notes": "Heat together, toss to coat"
-    },
-    {
-        "name": "Tzatziki-Inspired",
-        "technique": "no-cook",
-        "flavor": "Cool, tangy",
-        "protein": "Chicken",
-        "ingredients": "Yogurt, cucumber, garlic, lemon juice, dill",
-        "notes": "Serve cold or gently warm"
-    },
-    {
-        "name": "Pesto Cream",
-        "technique": "no-cook",
-        "flavor": "Herbaceous, rich",
-        "protein": "Beef/Chicken",
-        "ingredients": "Pesto, cream or Greek yogurt",
-        "notes": "Mix and heat, toss with meat"
-    },
-    {
-        "name": "Sesame-Garlic",
-        "technique": "pan",
-        "flavor": "Nutty, savory",
-        "protein": "Beef",
-        "ingredients": "Sesame oil, garlic, soy sauce, mirin/sugar",
-        "notes": "Heat sesame oil, garlic, add liquids, coat beef"
-    },
-    {
-        "name": "Smoky Paprika Butter",
-        "technique": "pan",
-        "flavor": "Warm, smoky",
-        "protein": "Beef/Chicken",
-        "ingredients": "Butter, smoked paprika, garlic, lemon juice",
-        "notes": "Melt butter, stir in rest"
-    },
-    {
-        "name": "Tahini-Lemon Sauce",
-        "technique": "no-cook",
-        "flavor": "Nutty, tangy",
-        "protein": "Chicken",
-        "ingredients": "Tahini, lemon juice, garlic, water",
-        "notes": "Whisk until creamy"
-    },
-    {
-        "name": "Sichuan Chili Oil Soy",
-        "technique": "no-cook",
-        "flavor": "Spicy, numbing",
-        "protein": "Beef",
-        "ingredients": "Chili oil, soy, vinegar, garlic, sugar",
-        "notes": "Toss warm with meat"
-    },
-    {
-        "name": "Coconut-Lime Sauce",
-        "technique": "simmer",
-        "flavor": "Bright, creamy",
-        "protein": "Chicken",
-        "ingredients": "Coconut milk, lime zest/juice, garlic, chili",
-        "notes": "Simmer briefly"
-    },
-    {
-        "name": "Quick Hoisin Stir-Fry",
-        "technique": "no-cook",
-        "flavor": "Sweet-savory",
-        "protein": "Beef/Chicken",
-        "ingredients": "Hoisin, soy, rice vinegar, garlic, sesame oil",
-        "notes": "Whisk and toss hot"
-    },
-    {
-        "name": "Shallot-Vinegar Glaze",
-        "technique": "pan",
-        "flavor": "Tangy, sweet-savory",
-        "protein": "Beef",
-        "ingredients": "Minced shallot, vinegar, honey, olive oil",
-        "notes": "Briefly sauté, reduce 1-2 min"
-    },
-    {
-        "name": "Orange-Soy Glaze",
-        "technique": "simmer",
-        "flavor": "Sweet, citrusy",
-        "protein": "Chicken",
-        "ingredients": "Orange juice, soy sauce, garlic, ginger, cornstarch (opt)",
-        "notes": "Simmer to thicken"
-    },
-    {
-        "name": "Caper-Dijon Cream",
-        "technique": "no-cook",
-        "flavor": "Briny, sharp, creamy",
-        "protein": "Chicken",
-        "ingredients": "Cream or yogurt, capers, Dijon, lemon",
-        "notes": "Blend or whisk, heat gently"
-    },
-    {
-        "name": "Harissa Yogurt",
-        "technique": "no-cook",
-        "flavor": "Spicy, creamy",
-        "protein": "Chicken",
-        "ingredients": "Harissa paste, yogurt, lemon juice",
-        "notes": "Mix raw or warm slightly"
-    },
-    {
-        "name": "Avocado Cilantro Lime",
-        "technique": "blend",
-        "flavor": "Creamy, fresh",
-        "protein": "Chicken",
-        "ingredients": "Avocado, cilantro, lime, garlic, olive oil",
-        "notes": "Blend raw, optional warm-up"
-    },
-    {
-        "name": "Coconut-Curry Mustard",
-        "technique": "simmer",
-        "flavor": "Creamy, sharp",
-        "protein": "Chicken",
-        "ingredients": "Coconut milk, mustard, curry powder, garlic",
-        "notes": "Simmer briefly"
-    },
-    {
-        "name": "Tomato-Garlic Pan Sauce",
-        "technique": "pan",
-        "flavor": "Bright, rich",
-        "protein": "Beef",
-        "ingredients": "Cherry/grape tomatoes, garlic, olive oil",
-        "notes": "Sauté tomatoes, smash, finish with butter"
-    },
-    {
-        "name": "Anchovy-Garlic Oil",
-        "technique": "pan",
-        "flavor": "Savory, salty",
-        "protein": "Beef",
-        "ingredients": "Anchovies, garlic, olive oil, chili flakes",
-        "notes": "Melt anchovy in oil, toss beef"
-    },
-    {
-        "name": "Mushroom Cream Pan Sauce",
-        "technique": "pan",
-        "flavor": "Earthy, rich",
-        "protein": "Beef",
-        "ingredients": "Mushrooms, butter, garlic, cream/milk, soy",
-        "notes": "Sauté mushrooms, add cream + soy"
-    },
-    {
-        "name": "Onion-Balsamic Reduction",
-        "technique": "pan",
-        "flavor": "Sweet-savory, tangy",
-        "protein": "Beef",
-        "ingredients": "Sliced onions, balsamic, butter, beef stock",
-        "notes": "Caramelize onions briefly, deglaze"
-    },
-    {
-        "name": "Garlic-Tomato Butter",
-        "technique": "simmer",
-        "flavor": "Savory, velvety",
-        "protein": "Beef/Chicken",
-        "ingredients": "Garlic, canned tomatoes, butter, parsley",
-        "notes": "Simmer crushed tomatoes w/ garlic, finish with butter"
-    },
-    {
-        "name": "Coconut Cashew Curry",
-        "technique": "simmer",
-        "flavor": "Creamy, nutty, bold",
-        "protein": "Chicken",
-        "ingredients": "Coconut milk, cashew butter, curry powder",
-        "notes": "Simmer all together, adjust spice"
-    },
-    {
-        "name": "Velvety Soy-Ginger Gravy",
-        "technique": "simmer",
-        "flavor": "Umami, thick, warm",
-        "protein": "Beef/Chicken",
-        "ingredients": "Soy, ginger, garlic, cornstarch, stock",
-        "notes": "Simmer soy + aromatics, thicken with starch"
-    },
-    {
-        "name": "French Onion-Inspired",
-        "technique": "simmer",
-        "flavor": "Deep, savory, herby",
-        "protein": "Beef",
-        "ingredients": "Sautéed onions, thyme, beef stock, dash of cream",
-        "notes": "Quick simmer, rich and thick"
-    },
-    {
-        "name": "Red Wine Pan Sauce",
-        "technique": "pan",
-        "flavor": "Luxurious, deep",
-        "protein": "Beef",
-        "ingredients": "Red wine, butter, garlic, thyme, mustard",
-        "notes": "Deglaze with wine, finish with butter"
-    },
-    {
-        "name": "White Bean Purée Sauce",
-        "technique": "blend",
-        "flavor": "Savory, creamy, filling",
-        "protein": "Chicken",
-        "ingredients": "Canned white beans, garlic, lemon, broth, herbs",
-        "notes": "Blend and warm, thick and hearty"
-    },
-    {
-        "name": "Coconut-Lentil Curry",
-        "technique": "blend",
-        "flavor": "Rich, creamy, earthy",
-        "protein": "Chicken",
-        "ingredients": "Cooked lentils, coconut milk, curry spices",
-        "notes": "Mash lentils or blend for thickness"
-    },
-    {
-        "name": "Romesco (Quick Blender)",
-        "technique": "blend",
-        "flavor": "Smoky, nutty, full",
-        "protein": "Chicken",
-        "ingredients": "Roasted red peppers, almonds, garlic, olive oil",
-        "notes": "Blend raw, heat or serve cold"
-    },
-    {
-        "name": "Brown Butter Sage Cream",
-        "technique": "pan",
-        "flavor": "Nutty, lush",
-        "protein": "Beef",
-        "ingredients": "Brown butter, cream/milk, garlic, sage",
-        "notes": "Brown butter first, add garlic + cream"
-    },
-    {
-        "name": "Carrot-Ginger Coconut",
-        "technique": "blend",
-        "flavor": "Sweet-savory, thick",
-        "protein": "Chicken",
-        "ingredients": "Cooked carrots, coconut milk, ginger, garlic",
-        "notes": "Blend and simmer"
-    },
-    {
-        "name": "Black Garlic Umami Bomb",
-        "technique": "pan",
-        "flavor": "Deep, funky-sweet",
-        "protein": "Beef",
-        "ingredients": "Black garlic, soy, vinegar, butter",
-        "notes": "Mash black garlic, sauté into butter"
-    },
-    {
-        "name": "Chili Bean Sauce (Doubanjiang)",
-        "technique": "simmer",
-        "flavor": "Spicy, meaty",
-        "protein": "Beef",
-        "ingredients": "Doubanjiang, garlic, soy, broth, sugar",
-        "notes": "Sauté, add broth, simmer"
-    },
-    {
-        "name": "Tomato-Lentil Curry",
-        "technique": "simmer",
-        "flavor": "Thick, earthy, saucy",
-        "protein": "Beef/Chicken",
-        "ingredients": "Cooked lentils, tomato paste, curry powder, garlic",
-        "notes": "Mash, simmer with water or broth"
-    }
+  {
+    "name": "Garlic-Miso Butter",
+    "technique": "pan",
+    "flavor": "Umami, rich",
+    "ingredients": "Butter, garlic, miso, soy, sesame oil",
+    "notes": "Melt butter, sauté garlic, stir in miso + soy",
+    "region": "East Asian",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Sundried Tomato Cream",
+    "technique": "blend",
+    "flavor": "Tangy, creamy",
+    "ingredients": "Sundried tomatoes, cream/yogurt, olive oil",
+    "notes": "Blend, heat, toss with beef",
+    "region": "European & American",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Ginger-Scallion Soy",
+    "technique": "blend",
+    "flavor": "Bright, savory",
+    "ingredients": "Scallions, ginger, garlic, soy sauce, rice vinegar, chili oil",
+    "notes": "Blend, warm lightly",
+    "region": "East Asian",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Chimichurri-ish Green",
+    "technique": "blend",
+    "flavor": "Herbaceous, tangy",
+    "ingredients": "Parsley/cilantro, garlic, vinegar, olive oil, chili flakes",
+    "notes": "Blend raw or warm briefly",
+    "region": "Latin & Mexican",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "Spicy Peanut",
+    "technique": "blend",
+    "flavor": "Nutty, spicy",
+    "ingredients": "Peanut butter, soy sauce, rice vinegar, chili paste",
+    "notes": "Blend, warm, toss",
+    "region": "Southeast Asian",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Balsamic-Honey Glaze",
+    "technique": "simmer",
+    "flavor": "Sweet, tangy",
+    "ingredients": "Balsamic vinegar, honey, Dijon mustard",
+    "notes": "Bubble briefly, toss to coat",
+    "region": "European & American",
+    "profile": "Sweet & glazed"
+  },
+  {
+    "name": "Quick Coconut Curry",
+    "technique": "simmer",
+    "flavor": "Creamy, aromatic",
+    "ingredients": "Curry powder/paste, coconut milk, fish sauce, lime juice, sugar",
+    "notes": "Sauté spices, add coconut milk, simmer 2-3 min",
+    "region": "South Asian",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Yogurt-Turmeric Curry",
+    "technique": "blend",
+    "flavor": "Tangy, light",
+    "ingredients": "Yogurt, turmeric, cumin, coriander, garlic, ginger, lemon juice",
+    "notes": "Blend, warm gently (don't boil)",
+    "region": "South Asian",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "Madras Tomato Curry",
+    "technique": "simmer",
+    "flavor": "Tomato-forward, warm",
+    "ingredients": "Onion/garlic, Madras powder, crushed tomatoes, cream/butter",
+    "notes": "Sauté base, add spices + tomato, simmer",
+    "region": "South Asian",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Thai Red Curry Blitz",
+    "technique": "simmer",
+    "flavor": "Spicy, rich",
+    "ingredients": "Red curry paste, coconut milk, broth, fish sauce, sugar",
+    "notes": "Fry paste, add liquids, heat through",
+    "region": "Southeast Asian",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Green Herb Coconut Curry",
+    "technique": "blend",
+    "flavor": "Fresh, herbal, creamy",
+    "ingredients": "Herbs, garlic, chili, lime juice, coconut milk",
+    "notes": "Blend, warm gently, toss chicken",
+    "region": "Southeast Asian",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "Lemon-Caper Butter",
+    "technique": "pan",
+    "flavor": "Bright, savory",
+    "ingredients": "Butter, lemon juice, capers, garlic",
+    "notes": "Melt butter, stir in lemon and capers",
+    "region": "European & American",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Honey Mustard",
+    "technique": "no-cook",
+    "flavor": "Sweet, tangy",
+    "ingredients": "Dijon mustard, honey, lemon juice, olive oil",
+    "notes": "Whisk together, warm if desired",
+    "region": "European & American",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Salsa Verde",
+    "technique": "no-cook",
+    "flavor": "Zesty, fresh",
+    "ingredients": "Parsley, capers, anchovy (optional), lemon, olive oil",
+    "notes": "Blend or finely chop, serve raw",
+    "region": "European & American",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "Chipotle-Lime Cream",
+    "technique": "blend",
+    "flavor": "Smoky, tangy",
+    "ingredients": "Chipotles in adobo, lime, sour cream or yogurt",
+    "notes": "Blend, toss warm with beef",
+    "region": "Latin & Mexican",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Gojujang-Honey",
+    "technique": "simmer",
+    "flavor": "Sweet, spicy, umami",
+    "ingredients": "Gojujang, honey, soy sauce, rice vinegar",
+    "notes": "Heat together, toss to coat",
+    "region": "East Asian",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Tzatziki-Inspired",
+    "technique": "no-cook",
+    "flavor": "Cool, tangy",
+    "ingredients": "Yogurt, cucumber, garlic, lemon juice, dill",
+    "notes": "Serve cold or gently warm",
+    "region": "Mediterranean & Middle Eastern",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "Pesto Cream",
+    "technique": "no-cook",
+    "flavor": "Herbaceous, rich",
+    "ingredients": "Pesto, cream or Greek yogurt",
+    "notes": "Mix and heat, toss with meat",
+    "region": "European & American",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Sesame-Garlic",
+    "technique": "pan",
+    "flavor": "Nutty, savory",
+    "ingredients": "Sesame oil, garlic, soy sauce, mirin/sugar",
+    "notes": "Heat sesame oil, garlic, add liquids, coat beef",
+    "region": "East Asian",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Smoky Paprika Butter",
+    "technique": "pan",
+    "flavor": "Warm, smoky",
+    "ingredients": "Butter, smoked paprika, garlic, lemon juice",
+    "notes": "Melt butter, stir in rest",
+    "region": "European & American",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Tahini-Lemon Sauce",
+    "technique": "no-cook",
+    "flavor": "Nutty, tangy",
+    "ingredients": "Tahini, lemon juice, garlic, water",
+    "notes": "Whisk until creamy",
+    "region": "Mediterranean & Middle Eastern",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Sichuan Chili Oil Soy",
+    "technique": "no-cook",
+    "flavor": "Spicy, numbing",
+    "ingredients": "Chili oil, soy, vinegar, garlic, sugar",
+    "notes": "Toss warm with meat",
+    "region": "East Asian",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Coconut-Lime Sauce",
+    "technique": "simmer",
+    "flavor": "Bright, creamy",
+    "ingredients": "Coconut milk, lime zest/juice, garlic, chili",
+    "notes": "Simmer briefly",
+    "region": "Southeast Asian",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Quick Hoisin Stir-Fry",
+    "technique": "no-cook",
+    "flavor": "Sweet-savory",
+    "ingredients": "Hoisin, soy, rice vinegar, garlic, sesame oil",
+    "notes": "Whisk and toss hot",
+    "region": "East Asian",
+    "profile": "Sweet & glazed"
+  },
+  {
+    "name": "Shallot-Vinegar Glaze",
+    "technique": "pan",
+    "flavor": "Tangy, sweet-savory",
+    "ingredients": "Minced shallot, vinegar, honey, olive oil",
+    "notes": "Briefly sauté, reduce 1-2 min",
+    "region": "European & American",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Orange-Soy Glaze",
+    "technique": "simmer",
+    "flavor": "Sweet, citrusy",
+    "ingredients": "Orange juice, soy sauce, garlic, ginger, cornstarch (opt)",
+    "notes": "Simmer to thicken",
+    "region": "East Asian",
+    "profile": "Sweet & glazed"
+  },
+  {
+    "name": "Caper-Dijon Cream",
+    "technique": "no-cook",
+    "flavor": "Briny, sharp, creamy",
+    "ingredients": "Cream or yogurt, capers, Dijon, lemon",
+    "notes": "Blend or whisk, heat gently",
+    "region": "European & American",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Harissa Yogurt",
+    "technique": "no-cook",
+    "flavor": "Spicy, creamy",
+    "ingredients": "Harissa paste, yogurt, lemon juice",
+    "notes": "Mix raw or warm slightly",
+    "region": "Mediterranean & Middle Eastern",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Avocado Cilantro Lime",
+    "technique": "blend",
+    "flavor": "Creamy, fresh",
+    "ingredients": "Avocado, cilantro, lime, garlic, olive oil",
+    "notes": "Blend raw, optional warm-up",
+    "region": "Latin & Mexican",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "Coconut-Curry Mustard",
+    "technique": "simmer",
+    "flavor": "Creamy, sharp",
+    "ingredients": "Coconut milk, mustard, curry powder, garlic",
+    "notes": "Simmer briefly",
+    "region": "South Asian",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Tomato-Garlic Pan Sauce",
+    "technique": "pan",
+    "flavor": "Bright, rich",
+    "ingredients": "Cherry/grape tomatoes, garlic, olive oil",
+    "notes": "Sauté tomatoes, smash, finish with butter",
+    "region": "European & American",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Anchovy-Garlic Oil",
+    "technique": "pan",
+    "flavor": "Savory, salty",
+    "ingredients": "Anchovies, garlic, olive oil, chili flakes",
+    "notes": "Melt anchovy in oil, toss beef",
+    "region": "European & American",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Mushroom Cream Pan Sauce",
+    "technique": "pan",
+    "flavor": "Earthy, rich",
+    "ingredients": "Mushrooms, butter, garlic, cream/milk, soy",
+    "notes": "Sauté mushrooms, add cream + soy",
+    "region": "European & American",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Onion-Balsamic Reduction",
+    "technique": "pan",
+    "flavor": "Sweet-savory, tangy",
+    "ingredients": "Sliced onions, balsamic, butter, beef stock",
+    "notes": "Caramelize onions briefly, deglaze",
+    "region": "European & American",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Garlic-Tomato Butter",
+    "technique": "simmer",
+    "flavor": "Savory, velvety",
+    "ingredients": "Garlic, canned tomatoes, butter, parsley",
+    "notes": "Simmer crushed tomatoes w/ garlic, finish with butter",
+    "region": "European & American",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Coconut Cashew Curry",
+    "technique": "simmer",
+    "flavor": "Creamy, nutty, bold",
+    "ingredients": "Coconut milk, cashew butter, curry powder",
+    "notes": "Simmer all together, adjust spice",
+    "region": "South Asian",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Velvety Soy-Ginger Gravy",
+    "technique": "simmer",
+    "flavor": "Umami, thick, warm",
+    "ingredients": "Soy, ginger, garlic, cornstarch, stock",
+    "notes": "Simmer soy + aromatics, thicken with starch",
+    "region": "East Asian",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "French Onion-Inspired",
+    "technique": "simmer",
+    "flavor": "Deep, savory, herby",
+    "ingredients": "Sautéed onions, thyme, beef stock, dash of cream",
+    "notes": "Quick simmer, rich and thick",
+    "region": "European & American",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Red Wine Pan Sauce",
+    "technique": "pan",
+    "flavor": "Luxurious, deep",
+    "ingredients": "Red wine, butter, garlic, thyme, mustard",
+    "notes": "Deglaze with wine, finish with butter",
+    "region": "European & American",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "White Bean Purée Sauce",
+    "technique": "blend",
+    "flavor": "Savory, creamy, filling",
+    "ingredients": "Canned white beans, garlic, lemon, broth, herbs",
+    "notes": "Blend and warm, thick and hearty",
+    "region": "European & American",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Coconut-Lentil Curry",
+    "technique": "blend",
+    "flavor": "Rich, creamy, earthy",
+    "ingredients": "Cooked lentils, coconut milk, curry spices",
+    "notes": "Mash lentils or blend for thickness",
+    "region": "South Asian",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Romesco (Quick Blender)",
+    "technique": "blend",
+    "flavor": "Smoky, nutty, full",
+    "ingredients": "Roasted red peppers, almonds, garlic, olive oil",
+    "notes": "Blend raw, heat or serve cold",
+    "region": "Mediterranean & Middle Eastern",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Brown Butter Sage Cream",
+    "technique": "pan",
+    "flavor": "Nutty, lush",
+    "ingredients": "Brown butter, cream/milk, garlic, sage",
+    "notes": "Brown butter first, add garlic + cream",
+    "region": "European & American",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Carrot-Ginger Coconut",
+    "technique": "blend",
+    "flavor": "Sweet-savory, thick",
+    "ingredients": "Cooked carrots, coconut milk, ginger, garlic",
+    "notes": "Blend and simmer",
+    "region": "Southeast Asian",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Black Garlic Umami Bomb",
+    "technique": "pan",
+    "flavor": "Deep, funky-sweet",
+    "ingredients": "Black garlic, soy, vinegar, butter",
+    "notes": "Mash black garlic, sauté into butter",
+    "region": "East Asian",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Chili Bean Sauce (Doubanjiang)",
+    "technique": "simmer",
+    "flavor": "Spicy, meaty",
+    "ingredients": "Doubanjiang, garlic, soy, broth, sugar",
+    "notes": "Sauté, add broth, simmer",
+    "region": "East Asian",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Tomato-Lentil Curry",
+    "technique": "simmer",
+    "flavor": "Thick, earthy, saucy",
+    "ingredients": "Cooked lentils, tomato paste, curry powder, garlic",
+    "notes": "Mash, simmer with water or broth",
+    "region": "South Asian",
+    "profile": "Umami & savory"
+  },
+  {
+    "name": "Roasted Tomatillo Salsa",
+    "technique": "blend",
+    "flavor": "Tangy, smoky, fresh",
+    "ingredients": "Tomatillos, garlic, jalapeño or serrano, cilantro, lime, onion",
+    "notes": "Char tomatillos + chilies under broiler, blend raw with rest",
+    "region": "Latin & Mexican",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Aji Verde (Peruvian)",
+    "technique": "blend",
+    "flavor": "Spicy, herby, creamy",
+    "ingredients": "Cilantro, jalapeño, garlic, lime, mayo or queso fresco, aji amarillo paste if you have it",
+    "notes": "Blend everything raw; thin with water",
+    "region": "Latin & Mexican",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Mojo Criollo",
+    "technique": "no-cook",
+    "flavor": "Bright, garlicky, citrusy",
+    "ingredients": "Sour orange or lime+orange juice, lots of garlic, oregano, cumin, olive oil",
+    "notes": "Whisk raw; doubles as a marinade",
+    "region": "Latin & Mexican",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Guajillo-Adobo Simmer",
+    "technique": "simmer",
+    "flavor": "Smoky, deep, medium-spicy",
+    "ingredients": "Dried guajillo + ancho chilies, garlic, vinegar, tomato, cumin, oregano",
+    "notes": "Soak chilies hot 15 min, blend smooth, simmer 10 min",
+    "region": "Latin & Mexican",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Chile de Árbol Oil",
+    "technique": "no-cook",
+    "flavor": "Fiery, nutty",
+    "ingredients": "Dried árbol chilies, garlic, neutral oil, splash of vinegar",
+    "notes": "Toast chilies + garlic in oil, cool, blend or leave chunky",
+    "region": "Latin & Mexican",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Nước Chấm",
+    "technique": "no-cook",
+    "flavor": "Salty-sweet-sour, bright",
+    "ingredients": "Fish sauce, lime juice, sugar, garlic, bird eye chilies, water",
+    "notes": "Whisk until sugar dissolves; universal dipping sauce",
+    "region": "Southeast Asian",
+    "profile": "Tangy & bright"
+  },
+  {
+    "name": "Sambal Oelek-Lime",
+    "technique": "no-cook",
+    "flavor": "Hot, fresh, sharp",
+    "ingredients": "Sambal oelek, lime juice, garlic, pinch of sugar, scallions",
+    "notes": "Stir together raw; toss through fried rice or noodles",
+    "region": "Southeast Asian",
+    "profile": "Hot & spicy"
+  },
+  {
+    "name": "Caramel Fish Sauce Glaze",
+    "technique": "simmer",
+    "flavor": "Sweet-savory, glossy",
+    "ingredients": "Sugar caramelized, fish sauce, shallot, garlic, black pepper, water",
+    "notes": "Melt sugar to amber, careful-add fish sauce + water, reduce glossy",
+    "region": "Southeast Asian",
+    "profile": "Sweet & glazed"
+  },
+  {
+    "name": "Lemongrass-Lime Dressing",
+    "technique": "no-cook",
+    "flavor": "Zesty, floral, light-hot",
+    "ingredients": "Minced lemongrass, lime zest + juice, fish sauce, sugar, chili, garlic",
+    "notes": "Pound or mince aromatics fine, whisk raw",
+    "region": "Southeast Asian",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "Gado-Gado Peanut",
+    "technique": "blend",
+    "flavor": "Rich, nutty, sweet-hot",
+    "ingredients": "Peanut butter, kecap manis or soy+honey, lime, garlic, chili, coconut milk to loosen",
+    "notes": "Blend raw, warm gently; thicker than Spicy Peanut",
+    "region": "Southeast Asian",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Mint-Cilantro Chutney",
+    "technique": "no-cook",
+    "flavor": "Fresh, hot, tangy",
+    "ingredients": "Mint, cilantro, green chilies, ginger, lemon, yogurt optional",
+    "notes": "Blend raw; the universal Indian green sauce",
+    "region": "South Asian",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "Tamarind-Meethi Chutney",
+    "technique": "simmer",
+    "flavor": "Sweet-sour, warm spice",
+    "ingredients": "Tamarind pulp, jaggery or brown sugar, cumin, ginger, dried mint",
+    "notes": "Simmer 10 min until syrupy",
+    "region": "South Asian",
+    "profile": "Sweet & glazed"
+  },
+  {
+    "name": "Garlic Raita",
+    "technique": "no-cook",
+    "flavor": "Cooling, garlicky",
+    "ingredients": "Whole-milk yogurt, grated garlic, roasted cumin, salt, cilantro",
+    "notes": "Stir raw; essential alongside spicy curries",
+    "region": "South Asian",
+    "profile": "Cooling & fresh"
+  },
+  {
+    "name": "White Korma Cream",
+    "technique": "simmer",
+    "flavor": "Mild, rich, nutty",
+    "ingredients": "Blended cashews + almonds, yogurt, cream, cardamom, mace, ghee",
+    "notes": "Grind nuts with water, simmer gently with spices 10 min; do not boil hard",
+    "region": "South Asian",
+    "profile": "Creamy & rich"
+  },
+  {
+    "name": "Vindaloo-Style Vinegar Chile",
+    "technique": "simmer",
+    "flavor": "Sharp, fiery, tangy",
+    "ingredients": "Kashmiri chilies, vinegar, garlic, ginger, mustard seeds, cloves, cinnamon",
+    "notes": "Blend paste, fry in oil, simmer 8-10 min; also great as marinade",
+    "region": "South Asian",
+    "profile": "Hot & spicy"
+  }
 ]

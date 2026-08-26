@@ -1,8 +1,10 @@
 import { Fragment, useState } from "react";
 import { recipes, sauces } from "./data";
 import type { BatchRecipe, QuickRecipe, Sauce } from "./types";
+import Builder from "./Builder";
 
 type AnyRecipe = QuickRecipe | BatchRecipe;
+type Tab = "recipes" | "sauces" | "builder";
 
 function ThemeToggle() {
     const [dark, setDark] = useState(() =>
@@ -20,6 +22,22 @@ function ThemeToggle() {
         >
             {dark ? "Light" : "Dark"}
         </button>
+    );
+}
+
+function Tabs({ tab, setTab }: { tab: Tab; setTab: (t: Tab) => void }) {
+    return (
+        <nav className="tabs">
+            {(["recipes", "sauces", "builder"] as const).map((t) => (
+                <button
+                    key={t}
+                    className={`ghost${tab === t ? " active" : ""}`}
+                    onClick={() => setTab(t)}
+                >
+                    {t.charAt(0).toUpperCase() + t.slice(1)}
+                </button>
+            ))}
+        </nav>
     );
 }
 
@@ -252,24 +270,30 @@ function RecipeTable({
 }
 
 export default function App() {
+    const [tab, setTab] = useState<Tab>("recipes");
     return (
         <main>
             <header>
                 <h1>Cooking</h1>
                 <ThemeToggle />
             </header>
-            <RecipeTable
-                title="Quick"
-                note={`${recipes.quick.length} recipes · fast start-to-ready`}
-                recipes={recipes.quick}
-            />
-            <RecipeTable
-                title="Batch"
-                note={`${recipes.batch.length} recipes · low active time, freezer-friendly`}
-                recipes={recipes.batch}
-            />
-
-            <SauceTable />
+            <Tabs tab={tab} setTab={setTab} />
+            {tab === "recipes" && (
+                <>
+                    <RecipeTable
+                        title="Quick"
+                        note={`${recipes.quick.length} recipes · fast start-to-ready`}
+                        recipes={recipes.quick}
+                    />
+                    <RecipeTable
+                        title="Batch"
+                        note={`${recipes.batch.length} recipes · low active time, freezer-friendly`}
+                        recipes={recipes.batch}
+                    />
+                </>
+            )}
+            {tab === "sauces" && <SauceTable />}
+            {tab === "builder" && <Builder />}
         </main>
     );
 }
@@ -287,7 +311,6 @@ function SauceTable() {
                         <th>Name</th>
                         <th>Technique</th>
                         <th>Flavor</th>
-                        <th>For</th>
                         <th>Ingredients</th>
                     </tr>
                 </thead>
@@ -311,12 +334,11 @@ function SauceTable() {
                                 </td>
                                 <td>{s.technique}</td>
                                 <td>{s.flavor}</td>
-                                <td>{s.protein}</td>
                                 <td>{s.ingredients}</td>
                             </tr>
                             {openName === s.name && (
                                 <tr className="foldout-row">
-                                    <td colSpan={5}>
+                                    <td colSpan={4}>
                                         <div className="foldout">
                                             <p>{s.notes}</p>
                                         </div>
