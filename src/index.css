@@ -1,386 +1,386 @@
 :root {
-  color-scheme: light;
-  --bg: #ffffff;
-  --border: #e9e8e6;
-  --row-hover: #f7f7f5;
-  --foldout-bg: #fbfbfa;
-  --text: #37352f;
-  --text-dim: #787774;
-  --btn-hover: #efefed;
+    color-scheme: light;
+    --bg: #ffffff;
+    --border: #e9e8e6;
+    --row-hover: #f7f7f5;
+    --foldout-bg: #fbfbfa;
+    --text: #37352f;
+    --text-dim: #787774;
+    --btn-hover: #efefed;
 }
 
 :root.dark {
-  color-scheme: dark;
-  --bg: #191919;
-  --border: #2e2e2c;
-  --row-hover: #232322;
-  --foldout-bg: #1e1e1d;
-  --text: #d4d4d2;
-  --text-dim: #9b9a97;
-  --btn-hover: #262625;
+    color-scheme: dark;
+    --bg: #191919;
+    --border: #2e2e2c;
+    --row-hover: #232322;
+    --foldout-bg: #1e1e1d;
+    --text: #d4d4d2;
+    --text-dim: #9b9a97;
+    --btn-hover: #262625;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  max-width: 1080px;
-  padding: 2rem 1.5rem 4rem;
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--text);
-  background: var(--bg);
-  -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2rem 1.5rem 4rem;
+    font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
 }
 
 header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 h1 {
-  font-size: 28px;
-  margin: 0 0 0.5rem;
+    font-size: 28px;
+    margin: 0 0 0.5rem;
 }
 
 h2 {
-  font-size: 18px;
-  margin: 2.5rem 0 0.5rem;
+    font-size: 18px;
+    margin: 2.5rem 0 0.5rem;
 }
 
 h4 {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-dim);
-  margin: 0 0 0.35rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    margin: 0 0 0.35rem;
 }
 
 h5 {
-  font-size: 12px;
-  color: var(--text-dim);
-  margin: 1rem 0 0.35rem;
+    font-size: 12px;
+    color: var(--text-dim);
+    margin: 1rem 0 0.35rem;
 }
 
 .dim {
-  color: var(--text-dim);
-  font-weight: 400;
+    color: var(--text-dim);
+    font-weight: 400;
 }
 
 button.ghost {
-  font: inherit;
-  color: var(--text-dim);
-  background: none;
-  border: none;
-  border-radius: 6px;
-  padding: 4px 10px;
-  cursor: pointer;
+    font: inherit;
+    color: var(--text-dim);
+    background: none;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
 }
 
 button.ghost:hover {
-  background: var(--btn-hover);
-  color: var(--text);
+    background: var(--btn-hover);
+    color: var(--text);
 }
 
 section {
-  overflow-x: auto;
+    overflow-x: auto;
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th {
-  text-align: left;
-  font-weight: 500;
-  color: var(--text-dim);
-  padding: 6px 10px;
-  border-bottom: 1px solid var(--border);
-  white-space: nowrap;
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-dim);
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
 }
 
 td {
-  padding: 8px 10px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
 }
 
 table.matrix td {
-  font-size: 12px;
-  line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 table.matrix tbody th {
-  white-space: normal;
-  width: 1%;
+    white-space: normal;
+    width: 1%;
 }
 
 table.matrix td.empty {
-  background: var(--row-hover);
+    background: var(--row-hover);
 }
 
 button.matrix-item {
-  font: inherit;
-  font-size: 12px;
-  line-height: 1.4;
-  color: var(--text);
-  background: none;
-  border: none;
-  padding: 0;
-  display: block;
-  cursor: pointer;
-  text-align: left;
+    font: inherit;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--text);
+    background: none;
+    border: none;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    text-align: left;
 }
 
 button.matrix-item:hover {
-  color: var(--text-dim);
+    color: var(--text-dim);
 }
 
 button.matrix-item.selected {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 button.matrix-item .marker {
-  font-size: 0.7em;
+    font-size: 0.7em;
 }
 
 button.sort {
-  font: inherit;
-  color: inherit;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 button.sort:hover {
-  color: var(--text);
+    color: var(--text);
 }
 
 .recipe-row td:first-child {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 .recipe-row {
-  cursor: pointer;
-  user-select: none;
+    cursor: pointer;
+    user-select: none;
 }
 
 .recipe-row:hover {
-  background: var(--row-hover);
+    background: var(--row-hover);
 }
 
 .chevron {
-  display: inline-block;
-  width: 1em;
-  color: var(--text-dim);
+    display: inline-block;
+    width: 1em;
+    color: var(--text-dim);
 }
 
 .foldout-row td {
-  background: var(--foldout-bg);
-  border-bottom-width: 2px;
+    background: var(--foldout-bg);
+    border-bottom-width: 2px;
 }
 
 .foldout {
-  padding: 4px 0 12px calc(1em + 14px);
-  display: grid;
-  gap: 1.25rem;
+    padding: 4px 0 12px calc(1em + 14px);
+    display: grid;
+    gap: 1.25rem;
 }
 
 .foldout p,
 .foldout ul,
 .foldout ol {
-  margin: 0;
+    margin: 0;
 }
 
 .foldout ul,
 .foldout ol {
-  padding-left: 1.25rem;
+    padding-left: 1.25rem;
 }
 
 .tabs {
-  display: flex;
-  gap: 2px;
-  margin: 0.5rem 0 0;
+    display: flex;
+    gap: 2px;
+    margin: 0.5rem 0 0;
 }
 
 button.ghost.active {
-  background: var(--btn-hover);
-  color: var(--text);
+    background: var(--btn-hover);
+    color: var(--text);
 }
 
 .steps {
-  display: flex;
-  gap: 0.75rem;
-  padding: 0;
-  margin: 1rem 0;
-  list-style: none;
-  font-size: 13px;
-  color: var(--text-dim);
+    display: flex;
+    gap: 0.75rem;
+    padding: 0;
+    margin: 1rem 0;
+    list-style: none;
+    font-size: 13px;
+    color: var(--text-dim);
 }
 
 .steps li.current {
-  color: var(--text);
-  font-weight: 500;
+    color: var(--text);
+    font-weight: 500;
 }
 
 .steps li::after {
-  content: "";
-  display: inline-block;
-  width: 1.6em;
+    content: "";
+    display: inline-block;
+    width: 1.6em;
 }
 
 .steps li.done::after {
-  content: "✓";
-  padding-left: 0.35em;
+    content: "✓";
+    padding-left: 0.35em;
 }
 
 .steps li.clickable {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .steps li.clickable:hover {
-  color: var(--text);
+    color: var(--text);
 }
 
 .chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 0.25rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0.25rem 0 1rem;
 }
 
 .chips.tabs-follow {
-  margin: 1rem 0 0;
+    margin: 1rem 0 0;
 }
 
 .chips.tabs-follow ~ section h2 {
-  margin-top: 1rem;
-  margin-left: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 button.chip {
-  font: inherit;
-  color: var(--text);
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 4px 12px;
-  cursor: pointer;
+    font: inherit;
+    color: var(--text);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 12px;
+    cursor: pointer;
 }
 
 button.chip:hover {
-  background: var(--row-hover);
+    background: var(--row-hover);
 }
 
 button.chip.selected {
-  border-color: var(--text-dim);
-  background: var(--text);
-  color: var(--bg);
+    border-color: var(--text-dim);
+    background: var(--text);
+    color: var(--bg);
 }
 
 button.chip.dimmed {
-  opacity: 0.45;
+    opacity: 0.45;
 }
 
 .step-nav {
-  display: flex;
-  gap: 6px;
-  margin-top: 0.25rem;
+    display: flex;
+    gap: 6px;
+    margin-top: 0.25rem;
 }
 
 .step-nav .push-right {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 button.ghost:disabled {
-  opacity: 0.4;
-  cursor: default;
+    opacity: 0.4;
+    cursor: default;
 }
 
 button.ghost:disabled:hover {
-  background: none;
-  color: var(--text-dim);
+    background: none;
+    color: var(--text-dim);
 }
 
 .summary {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 12px 16px;
-  margin-top: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 1.5rem;
 }
 
 .build-line {
-  margin: 0 0 0.75rem;
-  font-size: 15px;
+    margin: 0 0 0.75rem;
+    font-size: 15px;
 }
 
 .build-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 6px;
-  margin-bottom: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 6px;
+    margin-bottom: 0.75rem;
 }
 
 button.build-cell,
 div.build-cell {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  text-align: left;
-  font: inherit;
-  color: var(--text);
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+    font: inherit;
+    color: var(--text);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 10px;
 }
 
 .cell-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 2px;
+    display: flex;
+    gap: 10px;
+    margin-top: 2px;
 }
 
 .linklike {
-  font: inherit;
-  font-size: 12px;
-  color: var(--text-dim);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+    color: var(--text-dim);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .linklike:hover {
-  color: var(--text);
+    color: var(--text);
 }
 
 .cell-label {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-dim);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
 }
 
 .cell-value {
-  font-weight: 500;
-  overflow-wrap: anywhere;
+    font-weight: 500;
+    overflow-wrap: anywhere;
 }
 
 .cell-edit {
-  font-size: 12px;
-  color: var(--text-dim);
+    font-size: 12px;
+    color: var(--text-dim);
 }
