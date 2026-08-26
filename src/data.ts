@@ -1,9 +1,9 @@
-import recipesData from '../recipes.json'
-import saucesData from '../sauces.json'
-import formFactorsData from "../form_factors.json";
-import proteinsData from "../proteins.json";
-import techniquesData from "../techniques.json";
-import accessoriesData from "../accessories.json";
+import recipesData from '../data/recipes.json'
+import saucesData from '../data/sauces.json'
+import formFactorsData from "../data/form_factors.json";
+import proteinsData from "../data/proteins.json";
+import techniquesData from "../data/techniques.json";
+import accessoriesData from "../data/accessories.json";
 import type {
   Accessory,
   Build,

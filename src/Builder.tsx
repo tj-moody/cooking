@@ -71,6 +71,43 @@ function Chip({
     );
 }
 
+function GroupedChips<T extends { name: string }>({
+    items,
+    keyOf,
+    label,
+    selectedNames,
+    onToggle,
+}: {
+    items: T[];
+    keyOf: (item: T) => string[];
+    label?: (item: T) => string;
+    selectedNames: string[];
+    onToggle: (name: string) => void;
+}) {
+    const ids = [...new Set(items.map((x) => keyOf(x).join(" | ")))];
+    return (
+        <>
+            {ids.map((id) => (
+                <Fragment key={id}>
+                    <h5>{id.split(" | ").join(" / ")}</h5>
+                    <div className="chips">
+                        {items
+                            .filter((x) => keyOf(x).join(" | ") === id)
+                            .map((x) => (
+                                <Chip
+                                    key={x.name}
+                                    label={label ? label(x) : x.name}
+                                    selected={selectedNames.includes(x.name)}
+                                    onClick={() => onToggle(x.name)}
+                                />
+                            ))}
+                    </div>
+                </Fragment>
+            ))}
+        </>
+    );
+}
+
 function BuildCell({
     label,
     value,
@@ -350,67 +387,41 @@ export default function Builder() {
             {step === 3 && (
                 <>
                     <h4>Accessories (any number)</h4>
-                    {(() => {
-                        const keyOf = (a: Accessory) =>
-                            accGroupBy === "region" ? a.regions : [a.type];
-                        const groups = [...new Set(accessories.map(keyOf))];
-                        return (
-                            <>
-                                <div className="chips">
-                                    <Chip
-                                        label="By type"
-                                        selected={accGroupBy === "type"}
-                                        onClick={() => setAccGroupBy("type")}
-                                    />
-                                    <Chip
-                                        label="By region"
-                                        selected={accGroupBy === "region"}
-                                        onClick={() => setAccGroupBy("region")}
-                                    />
-                                    <Chip
-                                        label="Matrix"
-                                        selected={accGroupBy === "matrix"}
-                                        onClick={() => setAccGroupBy("matrix")}
-                                    />
-                                </div>
-                                {accGroupBy === "matrix" ? (
-                                    <MatrixView
-                                        items={accessories}
-                                        rowKey={(a: Accessory) => a.regions}
-                                        colKey={(a: Accessory) => [a.type]}
-                                        selectedNames={draft.accessories}
-                                        onToggle={toggleAccessory}
-                                    />
-                                ) : (
-                                    groups.map((group) => (
-                                        <Fragment key={group.join(" | ")}>
-                                            <h5>{group.join(" / ")}</h5>
-                                            <div className="chips">
-                                                {accessories
-                                                    .filter(
-                                                        (a) => keyOf(a) === group,
-                                                    )
-                                                    .map((a) => (
-                                                        <Chip
-                                                            key={a.name}
-                                                            label={a.name}
-                                                            selected={draft.accessories.includes(
-                                                                a.name,
-                                                            )}
-                                                            onClick={() =>
-                                                                toggleAccessory(
-                                                                    a.name,
-                                                                )
-                                                            }
-                                                        />
-                                                    ))}
-                                            </div>
-                                        </Fragment>
-                                    ))
-                                )}
-                            </>
-                        );
-                    })()}
+                    <div className="chips">
+                        <Chip
+                            label="By type"
+                            selected={accGroupBy === "type"}
+                            onClick={() => setAccGroupBy("type")}
+                        />
+                        <Chip
+                            label="By region"
+                            selected={accGroupBy === "region"}
+                            onClick={() => setAccGroupBy("region")}
+                        />
+                        <Chip
+                            label="Matrix"
+                            selected={accGroupBy === "matrix"}
+                            onClick={() => setAccGroupBy("matrix")}
+                        />
+                    </div>
+                    {accGroupBy === "matrix" ? (
+                        <MatrixView
+                            items={accessories}
+                            rowKey={(a: Accessory) => a.regions}
+                            colKey={(a: Accessory) => [a.type]}
+                            selectedNames={draft.accessories}
+                            onToggle={toggleAccessory}
+                        />
+                    ) : (
+                        <GroupedChips
+                            items={accessories}
+                            keyOf={(a: Accessory) =>
+                                accGroupBy === "region" ? a.regions : [a.type]
+                            }
+                            selectedNames={draft.accessories}
+                            onToggle={toggleAccessory}
+                        />
+                    )}
                     <div className="step-nav">
                         <button
                             className="ghost"
@@ -425,88 +436,62 @@ export default function Builder() {
             {step === 4 && (
                 <>
                     <h4>Sauce</h4>
-                    {(() => {
-                        const keyOf = (s: Sauce) =>
-                            groupBy === "region" ? s.regions : [s.profile];
-                        const groups = [...new Set(sauces.map(keyOf))];
-                        return (
-                            <>
-                                <div className="chips">
-                                    <Chip
-                                        label="By region"
-                                        selected={groupBy === "region"}
-                                        onClick={() => setGroupBy("region")}
-                                    />
-                                    <Chip
-                                        label="By flavor"
-                                        selected={groupBy === "profile"}
-                                        onClick={() => setGroupBy("profile")}
-                                    />
-                                    <Chip
-                                        label="Matrix"
-                                        selected={groupBy === "matrix"}
-                                        onClick={() => setGroupBy("matrix")}
-                                    />
-                                </div>
-                                {groupBy === "matrix" ? (
-                                    <>
-                                        <MatrixView
-                                            items={sauces}
-                                            rowKey={(s: Sauce) => s.regions}
-                                            colKey={(s: Sauce) => [s.profile]}
-                                            selectedNames={
-                                                draft.sauce
-                                                    ? [draft.sauce]
-                                                    : []
-                                            }
-                                            onToggle={(name) =>
-                                                setDraft((d) => ({
-                                                    ...d,
-                                                    sauce:
-                                                        d.sauce === name
-                                                            ? null
-                                                            : name,
-                                                }))
-                                            }
-                                        />
-                                        <div className="step-nav">
-                                            <button
-                                                className="ghost"
-                                                onClick={() => advance()}
-                                            >
-                                                Next
-                                            </button>
-                                        </div>
-                                    </>
-                                ) : (
-                                    groups.map((group) => (
-                                        <Fragment key={group.join(" | ")}>
-                                            <h5>{group.join(" / ")}</h5>
-                                            <div className="chips">
-                                                {sauces
-                                                    .filter(
-                                                        (s) => keyOf(s) === group,
-                                                    )
-                                                    .map((s) => (
-                                                        <Chip
-                                                            key={s.name}
-                                                            label={`${s.name} — ${s.flavor}`}
-                                                            selected={
-                                                                draft.sauce ===
-                                                                s.name
-                                                            }
-                                                            onClick={() =>
-                                                                pickSauce(s.name)
-                                                            }
-                                                        />
-                                                    ))}
-                                            </div>
-                                        </Fragment>
-                                    ))
-                                )}
-                            </>
-                        );
-                    })()}
+                    <div className="chips">
+                        <Chip
+                            label="By region"
+                            selected={groupBy === "region"}
+                            onClick={() => setGroupBy("region")}
+                        />
+                        <Chip
+                            label="By flavor"
+                            selected={groupBy === "profile"}
+                            onClick={() => setGroupBy("profile")}
+                        />
+                        <Chip
+                            label="Matrix"
+                            selected={groupBy === "matrix"}
+                            onClick={() => setGroupBy("matrix")}
+                        />
+                    </div>
+                    {groupBy === "matrix" ? (
+                        <>
+                            <MatrixView
+                                items={sauces}
+                                rowKey={(s: Sauce) => s.regions}
+                                colKey={(s: Sauce) => [s.profile]}
+                                selectedNames={
+                                    draft.sauce ? [draft.sauce] : []
+                                }
+                                onToggle={(name) =>
+                                    setDraft((d) => ({
+                                        ...d,
+                                        sauce:
+                                            d.sauce === name ? null : name,
+                                    }))
+                                }
+                            />
+                            <div className="step-nav">
+                                <button
+                                    className="ghost"
+                                    onClick={() => advance()}
+                                >
+                                    Next
+                                </button>
+                            </div>
+                        </>
+                    ) : (
+                        <GroupedChips
+                            items={sauces}
+                            keyOf={(s: Sauce) =>
+                                groupBy === "region" ? s.regions : [s.profile]
+                            }
+                            label={(s) => `${s.name} — ${s.flavor}`}
+                            selectedNames={
+                                draft.sauce ? [draft.sauce] : []
+                            }
+                            onToggle={pickSauce}
+                        />
+                    )}
                     <p>
                         <button
                             className="ghost"
