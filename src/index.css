@@ -56,7 +56,7 @@ h1 {
 
 h2 {
     font-size: 18px;
-    margin: 2.5rem 0 0.5rem;
+    margin: 1rem 0 0.5rem;
 }
 
 h4 {
@@ -213,7 +213,13 @@ button.sort:hover {
 .tabs {
     display: flex;
     gap: 2px;
-    margin: 0.5rem 0 0;
+    align-items: center;
+}
+
+.tabs .view-toggle {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 button.ghost.active {
@@ -262,13 +268,9 @@ button.ghost.active {
     margin: 0.25rem 0 1rem;
 }
 
-.chips.tabs-follow {
-    margin: 1rem 0 0;
-}
-
-.chips.tabs-follow ~ section h2 {
-    margin-top: 1rem;
-    margin-left: 1rem;
+.top-chips {
+    display: flex;
+    gap: 6px;
 }
 
 button.chip {

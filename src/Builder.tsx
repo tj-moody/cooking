@@ -44,7 +44,7 @@ function rand<T>(arr: T[]): T {
 }
 
 function allAccessories(): string[] {
-  return accessories.map((a) => a.name)
+    return accessories.map((a) => a.name);
 }
 
 function randomAccessoryPick(): string[] {
@@ -170,10 +170,6 @@ export default function Builder() {
             return;
         }
         setStep((s) => Math.min(s + 1, STEPS.length - 1));
-    }
-
-    function back() {
-        setStep((s) => Math.max(s - 1, 0));
     }
 
     function reset() {
@@ -422,14 +418,6 @@ export default function Builder() {
                             onToggle={toggleAccessory}
                         />
                     )}
-                    <div className="step-nav">
-                        <button
-                            className="ghost"
-                            onClick={() => advance()}
-                        >
-                            Next
-                        </button>
-                    </div>
                 </>
             )}
 
@@ -459,25 +447,14 @@ export default function Builder() {
                                 items={sauces}
                                 rowKey={(s: Sauce) => s.regions}
                                 colKey={(s: Sauce) => [s.profile]}
-                                selectedNames={
-                                    draft.sauce ? [draft.sauce] : []
-                                }
+                                selectedNames={draft.sauce ? [draft.sauce] : []}
                                 onToggle={(name) =>
                                     setDraft((d) => ({
                                         ...d,
-                                        sauce:
-                                            d.sauce === name ? null : name,
+                                        sauce: d.sauce === name ? null : name,
                                     }))
                                 }
                             />
-                            <div className="step-nav">
-                                <button
-                                    className="ghost"
-                                    onClick={() => advance()}
-                                >
-                                    Next
-                                </button>
-                            </div>
                         </>
                     ) : (
                         <GroupedChips
@@ -486,9 +463,7 @@ export default function Builder() {
                                 groupBy === "region" ? s.regions : [s.profile]
                             }
                             label={(s) => `${s.name} — ${s.flavor}`}
-                            selectedNames={
-                                draft.sauce ? [draft.sauce] : []
-                            }
+                            selectedNames={draft.sauce ? [draft.sauce] : []}
                             onToggle={pickSauce}
                         />
                     )}
@@ -508,14 +483,6 @@ export default function Builder() {
                     </p>
                 </>
             )}
-
-            <div className="step-nav">
-                {step > 0 && step < STEPS.length - 1 && (
-                    <button className="ghost" onClick={back}>
-                        Back
-                    </button>
-                )}
-            </div>
 
             {done && step === 5 && (
                 <div className="summary">

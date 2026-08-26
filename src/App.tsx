@@ -15,7 +15,7 @@ function ViewToggle({
     setView: (v: "list" | "matrix") => void;
 }) {
     return (
-        <div className="chips tabs-follow">
+        <div className="top-chips">
             <button
                 className={`chip${view === "list" ? " selected" : ""}`}
                 onClick={() => setView("list")}
@@ -51,18 +51,29 @@ function ThemeToggle() {
     );
 }
 
-function Tabs({ tab, setTab }: { tab: Tab; setTab: (t: Tab) => void }) {
+function Tabs({
+    tab,
+    setTab,
+    viewToggle,
+}: {
+    tab: Tab;
+    setTab: (t: Tab) => void;
+    viewToggle?: React.ReactNode;
+}) {
     return (
         <nav className="tabs">
-            {(["recipes", "sauces", "accessories", "builder"] as const).map((t) => (
-                <button
-                    key={t}
-                    className={`ghost${tab === t ? " active" : ""}`}
-                    onClick={() => setTab(t)}
-                >
-                    {t.charAt(0).toUpperCase() + t.slice(1)}
-                </button>
-            ))}
+            {(["recipes", "sauces", "accessories", "builder"] as const).map(
+                (t) => (
+                    <button
+                        key={t}
+                        className={`ghost${tab === t ? " active" : ""}`}
+                        onClick={() => setTab(t)}
+                    >
+                        {t.charAt(0).toUpperCase() + t.slice(1)}
+                    </button>
+                ),
+            )}
+            {viewToggle && <div className="view-toggle">{viewToggle}</div>}
         </nav>
     );
 }
@@ -297,13 +308,28 @@ function RecipeTable({
 
 export default function App() {
     const [tab, setTab] = useState<Tab>("recipes");
+    const [sauceView, setSauceView] = useState<"list" | "matrix">("list");
+    const [accView, setAccView] = useState<"list" | "matrix">("list");
     return (
         <main>
             <header>
                 <h1>Cooking</h1>
                 <ThemeToggle />
             </header>
-            <Tabs tab={tab} setTab={setTab} />
+            <Tabs
+                tab={tab}
+                setTab={setTab}
+                viewToggle={
+                    tab === "sauces" || tab === "accessories" ? (
+                        <ViewToggle
+                            view={tab === "sauces" ? sauceView : accView}
+                            setView={
+                                tab === "sauces" ? setSauceView : setAccView
+                            }
+                        />
+                    ) : undefined
+                }
+            />
             {tab === "recipes" && (
                 <>
                     <RecipeTable
@@ -318,8 +344,8 @@ export default function App() {
                     />
                 </>
             )}
-            {tab === "sauces" && <SaucesTab />}
-            {tab === "accessories" && <AccessoriesTab />}
+            {tab === "sauces" && <SaucesTab view={sauceView} />}
+            {tab === "accessories" && <AccessoriesTab view={accView} />}
             {tab === "builder" && <Builder />}
         </main>
     );
@@ -380,11 +406,9 @@ function SauceTable() {
     );
 }
 
-function SaucesTab() {
-    const [view, setView] = useState<"list" | "matrix">("list");
+function SaucesTab({ view }: { view: "list" | "matrix" }) {
     return (
         <>
-            <ViewToggle view={view} setView={setView} />
             {view === "list" ? (
                 <SauceTable />
             ) : (
@@ -400,11 +424,9 @@ function SaucesTab() {
     );
 }
 
-function AccessoriesTab() {
-    const [view, setView] = useState<"list" | "matrix">("list");
+function AccessoriesTab({ view }: { view: "list" | "matrix" }) {
     return (
         <>
-            <ViewToggle view={view} setView={setView} />
             {view === "list" ? (
                 <AccessoryList />
             ) : (
